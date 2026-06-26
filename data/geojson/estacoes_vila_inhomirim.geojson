@@ -1,0 +1,332 @@
+{
+  "type": "FeatureCollection",
+  "name": "estacoes_supervia_vila_inhomirim",
+  "metadata": {
+    "ramal_id": "vila_inhomirim",
+    "ramal_nome": "Vila Inhomirim",
+    "total_registros": 9,
+    "srid": "EPSG:4326",
+    "fonte": "OpenStreetMap/Overpass + curadoria"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sta_fragoso",
+      "properties": {
+        "id": "sta_fragoso",
+        "nome": "Fragoso",
+        "nome_normalizado": "fragoso",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.5887586,
+        "longitude": -43.1844125,
+        "osm_id": "node/1304246239",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "FRA",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1844125,
+          -22.5887586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_imbarie",
+      "properties": {
+        "id": "sta_imbarie",
+        "nome": "Imbariê",
+        "nome_normalizado": "imbarie",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6422246,
+        "longitude": -43.2195065,
+        "osm_id": "node/1304214216",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "IMB",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2195065,
+          -22.6422246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_manoel_belo",
+      "properties": {
+        "id": "sta_manoel_belo",
+        "nome": "Manoel Belo",
+        "nome_normalizado": "manoel_belo",
+        "tipo": "estacao",
+        "operador": "Supervia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6304749,
+        "longitude": -43.2104667,
+        "osm_id": "way/115429782",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": null,
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2104667,
+          -22.6304749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_manoel_belo",
+      "properties": {
+        "id": "sta_manoel_belo",
+        "nome": "Manoel Belo",
+        "nome_normalizado": "manoel_belo",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6304408,
+        "longitude": -43.2104943,
+        "osm_id": "node/1304217915",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "BEM",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2104943,
+          -22.6304408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_morabi",
+      "properties": {
+        "id": "sta_morabi",
+        "nome": "Morabi",
+        "nome_normalizado": "morabi",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6584732,
+        "longitude": -43.2305991,
+        "osm_id": "node/1304139978",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MBI",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2305991,
+          -22.6584732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_parada_angelica",
+      "properties": {
+        "id": "sta_parada_angelica",
+        "nome": "Parada Angélica",
+        "nome_normalizado": "parada_angelica",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6207231,
+        "longitude": -43.2024346,
+        "osm_id": "node/8638310827",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "PAG",
+        "wikidata": "Q10276027",
+        "wikipedia": "pt:Estação Parada Angélica",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2024346,
+          -22.6207231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_piabeta",
+      "properties": {
+        "id": "sta_piabeta",
+        "nome": "Piabetá",
+        "nome_normalizado": "piabeta",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6094246,
+        "longitude": -43.1796584,
+        "osm_id": "node/1304242080",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "PBA",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1796584,
+          -22.6094246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_saracuruna",
+      "properties": {
+        "id": "sta_saracuruna",
+        "nome": "Saracuruna",
+        "nome_normalizado": "saracuruna",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "saracuruna",
+          "vila_inhomirim",
+          "guapimirim"
+        ],
+        "ramais_nome": [
+          "Saracuruna",
+          "Vila Inhomirim",
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6777531,
+        "longitude": -43.247197,
+        "osm_id": "node/1053355283",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "SAR",
+        "wikidata": "Q10276137",
+        "wikipedia": "pt:Estação Saracuruna",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.247197,
+          -22.6777531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_vila_inhomirim",
+      "properties": {
+        "id": "sta_vila_inhomirim",
+        "nome": "Vila Inhomirim",
+        "nome_normalizado": "vila_inhomirim",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "vila_inhomirim"
+        ],
+        "ramais_nome": [
+          "Vila Inhomirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.5708955,
+        "longitude": -43.1846121,
+        "osm_id": "node/1304247564",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "VIM",
+        "wikidata": "Q10276218",
+        "wikipedia": "pt:Estação Vila Inhomirim",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1846121,
+          -22.5708955
+        ]
+      }
+    }
+  ]
+}

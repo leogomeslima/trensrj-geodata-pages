@@ -1,0 +1,13 @@
+{
+  "projeto": "SuperVia GeoData API",
+  "descricao": "API estática/local para consulta de estações da SuperVia e consumo GeoJSON pelo QGIS.",
+  "versao": "1.0.0",
+  "operador": "SuperVia",
+  "estado": "Rio de Janeiro",
+  "pais": "Brasil",
+  "srid": "EPSG:4326",
+  "origem": "Arquivo GeoJSON exportado do Overpass/OpenStreetMap anexado na conversa",
+  "licenca_dados": "OpenStreetMap/ODbL",
+  "ultima_atualizacao": "2026-06-26",
+  "total_estacoes": 103
+}

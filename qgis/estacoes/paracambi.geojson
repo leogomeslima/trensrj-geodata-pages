@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "name": "estacoes_supervia_paracambi",
+  "metadata": {
+    "ramal_id": "paracambi",
+    "ramal_nome": "Paracambi",
+    "total_registros": 4,
+    "srid": "EPSG:4326",
+    "fonte": "OpenStreetMap/Overpass + curadoria"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sta_japeri",
+      "properties": {
+        "id": "sta_japeri",
+        "nome": "Japeri",
+        "nome_normalizado": "japeri",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri",
+          "paracambi"
+        ],
+        "ramais_nome": [
+          "Japeri",
+          "Paracambi"
+        ],
+        "municipio": "Japeri",
+        "uf": "RJ",
+        "latitude": -22.644579,
+        "longitude": -43.6529816,
+        "osm_id": "node/1278195937",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "JRI",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.6529816,
+          -22.644579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_lages",
+      "properties": {
+        "id": "sta_lages",
+        "nome": "Lages",
+        "nome_normalizado": "lages",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "paracambi"
+        ],
+        "ramais_nome": [
+          "Paracambi"
+        ],
+        "municipio": "Paracambi",
+        "uf": "RJ",
+        "latitude": -22.6217954,
+        "longitude": -43.7040855,
+        "osm_id": "node/1278911578",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "LAJ",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.7040855,
+          -22.6217954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_paracambi",
+      "properties": {
+        "id": "sta_paracambi",
+        "nome": "Paracambi",
+        "nome_normalizado": "paracambi",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "paracambi"
+        ],
+        "ramais_nome": [
+          "Paracambi"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6115362,
+        "longitude": -43.7108646,
+        "osm_id": "way/626544054",
+        "railway": null,
+        "public_transport": "station",
+        "railway_ref": null,
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.7108646,
+          -22.6115362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_paracambi",
+      "properties": {
+        "id": "sta_paracambi",
+        "nome": "Paracambi",
+        "nome_normalizado": "paracambi",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "paracambi"
+        ],
+        "ramais_nome": [
+          "Paracambi"
+        ],
+        "municipio": "Paracambi",
+        "uf": "RJ",
+        "latitude": -22.6112575,
+        "longitude": -43.7107102,
+        "osm_id": "node/1277781330",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "PBI",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.7107102,
+          -22.6112575
+        ]
+      }
+    }
+  ]
+}

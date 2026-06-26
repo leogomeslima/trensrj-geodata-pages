@@ -1,0 +1,905 @@
+{
+  "type": "FeatureCollection",
+  "name": "estacoes_supervia_santa_cruz",
+  "metadata": {
+    "ramal_id": "santa_cruz",
+    "ramal_nome": "Santa Cruz",
+    "total_registros": 24,
+    "srid": "EPSG:4326",
+    "fonte": "OpenStreetMap/Overpass + curadoria"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sta_augusto_vasconcelos",
+      "properties": {
+        "id": "sta_augusto_vasconcelos",
+        "nome": "Augusto Vasconcelos",
+        "nome_normalizado": "augusto_vasconcelos",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8930412,
+        "longitude": -43.5373957,
+        "osm_id": "node/823909111",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "AVS",
+        "wikidata": "Q10275583",
+        "wikipedia": "pt:Estação Augusto Vasconcelos",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.5373957,
+          -22.8930412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_bangu",
+      "properties": {
+        "id": "sta_bangu",
+        "nome": "Bangu",
+        "nome_normalizado": "bangu",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8753636,
+        "longitude": -43.4656958,
+        "osm_id": "node/823908896",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "BGU",
+        "wikidata": "Q10275590",
+        "wikipedia": "pt:Estação Bangu",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4656958,
+          -22.8753636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_benjamim_do_monte",
+      "properties": {
+        "id": "sta_benjamim_do_monte",
+        "nome": "Benjamim do Monte",
+        "nome_normalizado": "benjamim_do_monte",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9062859,
+        "longitude": -43.5810156,
+        "osm_id": "node/823908910",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "BME",
+        "wikidata": "Q10275599",
+        "wikipedia": "pt:Estação Benjamim do Monte",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.5810156,
+          -22.9062859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_campo_grande",
+      "properties": {
+        "id": "sta_campo_grande",
+        "nome": "Campo Grande",
+        "nome_normalizado": "campo_grande",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9022661,
+        "longitude": -43.5600036,
+        "osm_id": "node/823909050",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "CGE",
+        "wikidata": "Q10275623",
+        "wikipedia": "pt:Estação Campo Grande (Rio de Janeiro)",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.5600036,
+          -22.9022661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_central_do_brasil",
+      "properties": {
+        "id": "sta_central_do_brasil",
+        "nome": "Central do Brasil",
+        "nome_normalizado": "central_do_brasil",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9035467,
+        "longitude": -43.1914186,
+        "osm_id": "node/712849026",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "CBL",
+        "wikidata": "Q1274003",
+        "wikipedia": "pt:Estação Central do Brasil",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1914186,
+          -22.9035467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_cosmos",
+      "properties": {
+        "id": "sta_cosmos",
+        "nome": "Cosmos",
+        "nome_normalizado": "cosmos",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9127658,
+        "longitude": -43.6144485,
+        "osm_id": "node/823909074",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "COS",
+        "wikidata": "Q10275672",
+        "wikipedia": "pt:Estação Cosmos",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.6144485,
+          -22.9127658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_deodoro",
+      "properties": {
+        "id": "sta_deodoro",
+        "nome": "Deodoro",
+        "nome_normalizado": "deodoro",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8550694,
+        "longitude": -43.3835251,
+        "osm_id": "node/823909099",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "DDO",
+        "wikidata": "Q10275687",
+        "wikipedia": "pt:Estação Deodoro",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3835251,
+          -22.8550694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_guilherme_da_silveira",
+      "properties": {
+        "id": "sta_guilherme_da_silveira",
+        "nome": "Guilherme da Silveira",
+        "nome_normalizado": "guilherme_da_silveira",
+        "tipo": "estacao",
+        "operador": "SuperVIa",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8752578,
+        "longitude": -43.4566788,
+        "osm_id": "node/823908982",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "GSA",
+        "wikidata": "Q10275843",
+        "wikipedia": "pt:Estação Guilherme da Silveira",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4566788,
+          -22.8752578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_inhoaiba",
+      "properties": {
+        "id": "sta_inhoaiba",
+        "nome": "Inhoaíba",
+        "nome_normalizado": "inhoaiba",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9090062,
+        "longitude": -43.5950918,
+        "osm_id": "node/823909108",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "IBA",
+        "wikidata": "Q10275872",
+        "wikipedia": "pt:Estação Inhoaíba",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.5950918,
+          -22.9090062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_madureira",
+      "properties": {
+        "id": "sta_madureira",
+        "nome": "Madureira",
+        "nome_normalizado": "madureira",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8766775,
+        "longitude": -43.3376192,
+        "osm_id": "node/823908929",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MRA",
+        "wikidata": "Q10275943",
+        "wikipedia": "pt:Estação Madureira",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3376192,
+          -22.8766775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_magalhaes_bastos",
+      "properties": {
+        "id": "sta_magalhaes_bastos",
+        "nome": "Magalhães Bastos",
+        "nome_normalizado": "magalhaes_bastos",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8680841,
+        "longitude": -43.413575,
+        "osm_id": "node/823909071",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MGA",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.413575,
+          -22.8680841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_maracana",
+      "properties": {
+        "id": "sta_maracana",
+        "nome": "Maracanã",
+        "nome_normalizado": "maracana",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9093268,
+        "longitude": -43.2333606,
+        "osm_id": "way/288792009",
+        "railway": null,
+        "public_transport": "station",
+        "railway_ref": null,
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2333606,
+          -22.9093268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_maracana",
+      "properties": {
+        "id": "sta_maracana",
+        "nome": "Maracanã",
+        "nome_normalizado": "maracana",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9092963,
+        "longitude": -43.2332875,
+        "osm_id": "node/712849021",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MNA",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2332875,
+          -22.9092963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_mocidade_padre_miguel",
+      "properties": {
+        "id": "sta_mocidade_padre_miguel",
+        "nome": "Mocidade/Padre Miguel",
+        "nome_normalizado": "mocidade_padre_miguel",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8750904,
+        "longitude": -43.4476634,
+        "osm_id": "node/823909046",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "PML",
+        "wikidata": "Q10275988",
+        "wikipedia": "pt:Estação Mocidade/Padre Miguel",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4476634,
+          -22.8750904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_olimpica_de_engenho_de_dentro",
+      "properties": {
+        "id": "sta_olimpica_de_engenho_de_dentro",
+        "nome": "Olímpica de Engenho de Dentro",
+        "nome_normalizado": "olimpica_de_engenho_de_dentro",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.895595,
+        "longitude": -43.2936902,
+        "osm_id": "node/823908958",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "EDO",
+        "wikidata": "Q10276017",
+        "wikipedia": "pt:Estação Olímpica de Engenho de Dentro",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2936902,
+          -22.895595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_paciencia",
+      "properties": {
+        "id": "sta_paciencia",
+        "nome": "Paciência",
+        "nome_normalizado": "paciencia",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9162516,
+        "longitude": -43.6324651,
+        "osm_id": "node/823909093",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "PAC",
+        "wikidata": "Q10276025",
+        "wikipedia": "pt:Estação Paciência",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.6324651,
+          -22.9162516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_realengo",
+      "properties": {
+        "id": "sta_realengo",
+        "nome": "Realengo",
+        "nome_normalizado": "realengo",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8747603,
+        "longitude": -43.4294083,
+        "osm_id": "node/823908935",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "REA",
+        "wikidata": "Q10276087",
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4294083,
+          -22.8747603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_santa_cruz",
+      "properties": {
+        "id": "sta_santa_cruz",
+        "nome": "Santa Cruz",
+        "nome_normalizado": "santa_cruz",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9155501,
+        "longitude": -43.6840898,
+        "osm_id": "node/823908945",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "SCZ",
+        "wikidata": "Q10276131",
+        "wikipedia": "pt:Estação Santa Cruz (Rio de Janeiro)",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.6840898,
+          -22.9155501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_santissimo",
+      "properties": {
+        "id": "sta_santissimo",
+        "nome": "Santíssimo",
+        "nome_normalizado": "santissimo",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8796485,
+        "longitude": -43.5113977,
+        "osm_id": "node/823909107",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "STO",
+        "wikidata": "Q10276134",
+        "wikipedia": "pt:Estação Santíssimo",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.5113977,
+          -22.8796485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_sao_cristovao",
+      "properties": {
+        "id": "sta_sao_cristovao",
+        "nome": "São Cristóvão",
+        "nome_normalizado": "sao_cristovao",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9095585,
+        "longitude": -43.2227819,
+        "osm_id": "way/442465289",
+        "railway": null,
+        "public_transport": "station",
+        "railway_ref": null,
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2227819,
+          -22.9095585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_sao_cristovao",
+      "properties": {
+        "id": "sta_sao_cristovao",
+        "nome": "São Cristóvão",
+        "nome_normalizado": "sao_cristovao",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
+        ],
+        "ramais_nome": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9095441,
+        "longitude": -43.2228235,
+        "osm_id": "node/712849018",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "SCO",
+        "wikidata": "Q9352803",
+        "wikipedia": "pt:Estação São Cristóvão (Rio de Janeiro)",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2228235,
+          -22.9095441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_senador_camara",
+      "properties": {
+        "id": "sta_senador_camara",
+        "nome": "Senador Camará",
+        "nome_normalizado": "senador_camara",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8757923,
+        "longitude": -43.4861142,
+        "osm_id": "node/823908998",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "SEN",
+        "wikidata": "Q10276143",
+        "wikipedia": "pt:Estação Senador Camará",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4861142,
+          -22.8757923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_tancredo_neves",
+      "properties": {
+        "id": "sta_tancredo_neves",
+        "nome": "Tancredo Neves",
+        "nome_normalizado": "tancredo_neves",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9188724,
+        "longitude": -43.6493079,
+        "osm_id": "node/823908904",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "TNS",
+        "wikidata": "Q10276177",
+        "wikipedia": "pt:Estação Tancredo Neves",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.6493079,
+          -22.9188724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_vila_militar",
+      "properties": {
+        "id": "sta_vila_militar",
+        "nome": "Vila Militar",
+        "nome_normalizado": "vila_militar",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "santa_cruz"
+        ],
+        "ramais_nome": [
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8625336,
+        "longitude": -43.4020334,
+        "osm_id": "node/823908991",
+        "railway": "station",
+        "public_transport": null,
+        "railway_ref": "VMR",
+        "wikidata": "Q10276219",
+        "wikipedia": "pt:Estação Vila Militar",
+        "status_validacao": "pendente_revisao"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4020334,
+          -22.8625336
+        ]
+      }
+    }
+  ]
+}
