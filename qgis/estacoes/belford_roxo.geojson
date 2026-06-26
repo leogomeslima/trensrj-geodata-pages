@@ -1,154 +1,70 @@
 {
   "type": "FeatureCollection",
-  "name": "estacoes_supervia_belford_roxo",
+  "name": "estacoes_belford_roxo",
   "metadata": {
-    "ramal_id": "belford_roxo",
-    "ramal_nome": "Belford Roxo",
-    "total_registros": 21,
+    "projeto": "SuperVia GeoData Pages",
+    "descricao": "Base estática georreferenciada das estações ferroviárias da SuperVia RJ, corrigida por curadoria e consulta complementar de faltantes.",
+    "versao": "1.1.0",
+    "operador": "SuperVia",
+    "estado": "Rio de Janeiro",
+    "pais": "Brasil",
     "srid": "EPSG:4326",
-    "fonte": "OpenStreetMap/Overpass + curadoria"
+    "origem": "OpenStreetMap/Overpass + curadoria manual por lista mestre",
+    "licenca_dados": "OpenStreetMap/ODbL",
+    "ultima_atualizacao": "2026-06-26",
+    "total_estacoes": 19,
+    "dataset": "estacoes_supervia",
+    "total_registros": 103,
+    "correcao": {
+      "extras_removidos": [
+        "Adeus",
+        "Alemão",
+        "Itararé",
+        "Palmeiras"
+      ],
+      "duplicidades_resolvidas": [
+        {
+          "nome": "Bonsucesso",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Manoel Belo",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Maracanã",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Paracambi",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Parque Estrela",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "São Cristóvão",
+          "quantidade_original": 2
+        }
+      ],
+      "estacoes_adicionadas": [
+        "Corte Oito",
+        "Santa Dalila",
+        "Santa Guilhermina",
+        "Jardim Nova Marília",
+        "Jororó",
+        "Citrolândia",
+        "Parada Ideal",
+        "Jardim Guapimirim",
+        "Parada Modelo",
+        "Parada Bananal"
+      ],
+      "faltantes_restantes": []
+    },
+    "ramal": "belford_roxo"
   },
   "features": [
-    {
-      "type": "Feature",
-      "id": "sta_agostinho_porto",
-      "properties": {
-        "id": "sta_agostinho_porto",
-        "nome": "Agostinho Porto",
-        "nome_normalizado": "agostinho_porto",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.7886407,
-        "longitude": -43.3813924,
-        "osm_id": "node/993784202",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "AGO",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3813924,
-          -22.7886407
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_barros_filho",
-      "properties": {
-        "id": "sta_barros_filho",
-        "nome": "Barros Filho",
-        "nome_normalizado": "barros_filho",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8332113,
-        "longitude": -43.3665604,
-        "osm_id": "node/823909057",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "BFO",
-        "wikidata": "Q10275594",
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3665604,
-          -22.8332113
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_belford_roxo",
-      "properties": {
-        "id": "sta_belford_roxo",
-        "nome": "Belford Roxo",
-        "nome_normalizado": "belford_roxo",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": "Belford Roxo",
-        "uf": "RJ",
-        "latitude": -22.7640713,
-        "longitude": -43.399816,
-        "osm_id": "node/6753788981",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "BRX",
-        "wikidata": "Q10275598",
-        "wikipedia": "pt:Estação Belford Roxo",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.399816,
-          -22.7640713
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_cavalcanti",
-      "properties": {
-        "id": "sta_cavalcanti",
-        "nome": "Cavalcanti",
-        "nome_normalizado": "cavalcanti",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8745414,
-        "longitude": -43.3157493,
-        "osm_id": "node/823909073",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "CAV",
-        "wikidata": "Q10275636",
-        "wikipedia": "pt:Estação Cavalcanti",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3157493,
-          -22.8745414
-        ]
-      }
-    },
     {
       "type": "Feature",
       "id": "sta_central_do_brasil",
@@ -165,7 +81,7 @@
           "belford_roxo",
           "saracuruna"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Deodoro",
           "Japeri",
           "Santa Cruz",
@@ -182,7 +98,7 @@
         "railway_ref": "CBL",
         "wikidata": "Q1274003",
         "wikipedia": "pt:Estação Central do Brasil",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -194,407 +110,6 @@
     },
     {
       "type": "Feature",
-      "id": "sta_coelho_da_rocha",
-      "properties": {
-        "id": "sta_coelho_da_rocha",
-        "nome": "Coelho da Rocha",
-        "nome_normalizado": "coelho_da_rocha",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.7787292,
-        "longitude": -43.3873469,
-        "osm_id": "node/993784935",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "CRA",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3873469,
-          -22.7787292
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_costa_barros",
-      "properties": {
-        "id": "sta_costa_barros",
-        "nome": "Costa Barros",
-        "nome_normalizado": "costa_barros",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8217976,
-        "longitude": -43.370258,
-        "osm_id": "node/823908922",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "COB",
-        "wikidata": "Q10275671",
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.370258,
-          -22.8217976
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_del_castilho",
-      "properties": {
-        "id": "sta_del_castilho",
-        "nome": "Del Castilho",
-        "nome_normalizado": "del_castilho",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8802009,
-        "longitude": -43.2703898,
-        "osm_id": "node/823908964",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "DEL",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2703898,
-          -22.8802009
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_honorio_gurgel",
-      "properties": {
-        "id": "sta_honorio_gurgel",
-        "nome": "Honório Gurgel",
-        "nome_normalizado": "honorio_gurgel",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8496197,
-        "longitude": -43.3572618,
-        "osm_id": "node/823909054",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "HON",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3572618,
-          -22.8496197
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_jacarezinho",
-      "properties": {
-        "id": "sta_jacarezinho",
-        "nome": "Jacarezinho",
-        "nome_normalizado": "jacarezinho",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8841636,
-        "longitude": -43.2550613,
-        "osm_id": "node/823908954",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "JAR",
-        "wikidata": "Q10275884",
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2550613,
-          -22.8841636
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_maracana",
-      "properties": {
-        "id": "sta_maracana",
-        "nome": "Maracanã",
-        "nome_normalizado": "maracana",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz",
-          "belford_roxo",
-          "saracuruna"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz",
-          "Belford Roxo",
-          "Saracuruna"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.9093268,
-        "longitude": -43.2333606,
-        "osm_id": "way/288792009",
-        "railway": null,
-        "public_transport": "station",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2333606,
-          -22.9093268
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_maracana",
-      "properties": {
-        "id": "sta_maracana",
-        "nome": "Maracanã",
-        "nome_normalizado": "maracana",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz",
-          "belford_roxo",
-          "saracuruna"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz",
-          "Belford Roxo",
-          "Saracuruna"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.9092963,
-        "longitude": -43.2332875,
-        "osm_id": "node/712849021",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "MNA",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2332875,
-          -22.9092963
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_mercadao_de_madureira",
-      "properties": {
-        "id": "sta_mercadao_de_madureira",
-        "nome": "Mercadão de Madureira",
-        "nome_normalizado": "mercadao_de_madureira",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8732169,
-        "longitude": -43.336866,
-        "osm_id": "node/823908996",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "MGO",
-        "wikidata": "Q10275980",
-        "wikipedia": "pt:Estação Mercadão de Madureira",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.336866,
-          -22.8732169
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_pavuna_sao_joao_de_meriti",
-      "properties": {
-        "id": "sta_pavuna_sao_joao_de_meriti",
-        "nome": "Pavuna/São João de Meriti",
-        "nome_normalizado": "pavuna_sao_joao_de_meriti",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8056064,
-        "longitude": -43.3670241,
-        "osm_id": "node/823909007",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "PVA",
-        "wikidata": "Q10276044",
-        "wikipedia": "pt:Estação Pavuna/São João de Meriti",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3670241,
-          -22.8056064
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_pilares",
-      "properties": {
-        "id": "sta_pilares",
-        "nome": "Pilares",
-        "nome_normalizado": "pilares",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.880979,
-        "longitude": -43.2915738,
-        "osm_id": "node/823909080",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "PLA",
-        "wikidata": "Q10276056",
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2915738,
-          -22.880979
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_rocha_miranda",
-      "properties": {
-        "id": "sta_rocha_miranda",
-        "nome": "Rocha Miranda",
-        "nome_normalizado": "rocha_miranda",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "belford_roxo"
-        ],
-        "ramais_nome": [
-          "Belford Roxo"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.8546618,
-        "longitude": -43.3517885,
-        "osm_id": "node/823909092",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "RMA",
-        "wikidata": "Q10276099",
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3517885,
-          -22.8546618
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "sta_sao_cristovao",
       "properties": {
         "id": "sta_sao_cristovao",
@@ -609,50 +124,7 @@
           "belford_roxo",
           "saracuruna"
         ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz",
-          "Belford Roxo",
-          "Saracuruna"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.9095585,
-        "longitude": -43.2227819,
-        "osm_id": "way/442465289",
-        "railway": null,
-        "public_transport": "station",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2227819,
-          -22.9095585
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_sao_cristovao",
-      "properties": {
-        "id": "sta_sao_cristovao",
-        "nome": "São Cristóvão",
-        "nome_normalizado": "sao_cristovao",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz",
-          "belford_roxo",
-          "saracuruna"
-        ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Deodoro",
           "Japeri",
           "Santa Cruz",
@@ -669,7 +141,7 @@
         "railway_ref": "SCO",
         "wikidata": "Q9352803",
         "wikipedia": "pt:Estação São Cristóvão (Rio de Janeiro)",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -681,36 +153,44 @@
     },
     {
       "type": "Feature",
-      "id": "sta_tomas_coelho",
+      "id": "sta_maracana",
       "properties": {
-        "id": "sta_tomas_coelho",
-        "nome": "Tomás Coelho",
-        "nome_normalizado": "tomas_coelho",
+        "id": "sta_maracana",
+        "nome": "Maracanã",
+        "nome_normalizado": "maracana",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
-          "belford_roxo"
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
         ],
-        "ramais_nome": [
-          "Belford Roxo"
+        "ramais_nomes": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
         ],
-        "municipio": null,
+        "municipio": "Rio de Janeiro",
         "uf": "RJ",
-        "latitude": -22.8690481,
-        "longitude": -43.3052837,
-        "osm_id": "node/823908947",
+        "latitude": -22.9092963,
+        "longitude": -43.2332875,
+        "osm_id": "node/712849021",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "TOM",
-        "wikidata": "Q10276189",
+        "railway_ref": "MNA",
+        "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.3052837,
-          -22.8690481
+          -43.2332875,
+          -22.9092963
         ]
       }
     },
@@ -727,7 +207,7 @@
           "belford_roxo",
           "saracuruna"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Belford Roxo",
           "Saracuruna"
         ],
@@ -741,13 +221,398 @@
         "railway_ref": "TRI",
         "wikidata": "Q10276194",
         "wikipedia": "pt:Estação Triagem (SuperVia)",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -43.2440972,
           -22.8967174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_jacarezinho",
+      "properties": {
+        "id": "sta_jacarezinho",
+        "nome": "Jacarezinho",
+        "nome_normalizado": "jacarezinho",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8841636,
+        "longitude": -43.2550613,
+        "osm_id": "node/823908954",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "JAR",
+        "wikidata": "Q10275884",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2550613,
+          -22.8841636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_del_castilho",
+      "properties": {
+        "id": "sta_del_castilho",
+        "nome": "Del Castilho",
+        "nome_normalizado": "del_castilho",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8802009,
+        "longitude": -43.2703898,
+        "osm_id": "node/823908964",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "DEL",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2703898,
+          -22.8802009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_pilares",
+      "properties": {
+        "id": "sta_pilares",
+        "nome": "Pilares",
+        "nome_normalizado": "pilares",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.880979,
+        "longitude": -43.2915738,
+        "osm_id": "node/823909080",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "PLA",
+        "wikidata": "Q10276056",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2915738,
+          -22.880979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_tomas_coelho",
+      "properties": {
+        "id": "sta_tomas_coelho",
+        "nome": "Tomás Coelho",
+        "nome_normalizado": "tomas_coelho",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8690481,
+        "longitude": -43.3052837,
+        "osm_id": "node/823908947",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "TOM",
+        "wikidata": "Q10276189",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3052837,
+          -22.8690481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_cavalcanti",
+      "properties": {
+        "id": "sta_cavalcanti",
+        "nome": "Cavalcanti",
+        "nome_normalizado": "cavalcanti",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8745414,
+        "longitude": -43.3157493,
+        "osm_id": "node/823909073",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "CAV",
+        "wikidata": "Q10275636",
+        "wikipedia": "pt:Estação Cavalcanti",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3157493,
+          -22.8745414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_mercadao_de_madureira",
+      "properties": {
+        "id": "sta_mercadao_de_madureira",
+        "nome": "Mercadão de Madureira",
+        "nome_normalizado": "mercadao_de_madureira",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8732169,
+        "longitude": -43.336866,
+        "osm_id": "node/823908996",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MGO",
+        "wikidata": "Q10275980",
+        "wikipedia": "pt:Estação Mercadão de Madureira",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.336866,
+          -22.8732169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_rocha_miranda",
+      "properties": {
+        "id": "sta_rocha_miranda",
+        "nome": "Rocha Miranda",
+        "nome_normalizado": "rocha_miranda",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8546618,
+        "longitude": -43.3517885,
+        "osm_id": "node/823909092",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "RMA",
+        "wikidata": "Q10276099",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3517885,
+          -22.8546618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_honorio_gurgel",
+      "properties": {
+        "id": "sta_honorio_gurgel",
+        "nome": "Honório Gurgel",
+        "nome_normalizado": "honorio_gurgel",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8496197,
+        "longitude": -43.3572618,
+        "osm_id": "node/823909054",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "HON",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3572618,
+          -22.8496197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_barros_filho",
+      "properties": {
+        "id": "sta_barros_filho",
+        "nome": "Barros Filho",
+        "nome_normalizado": "barros_filho",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8332113,
+        "longitude": -43.3665604,
+        "osm_id": "node/823909057",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "BFO",
+        "wikidata": "Q10275594",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3665604,
+          -22.8332113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_costa_barros",
+      "properties": {
+        "id": "sta_costa_barros",
+        "nome": "Costa Barros",
+        "nome_normalizado": "costa_barros",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8217976,
+        "longitude": -43.370258,
+        "osm_id": "node/823908922",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "COB",
+        "wikidata": "Q10275671",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.370258,
+          -22.8217976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_pavuna_sao_joao_de_meriti",
+      "properties": {
+        "id": "sta_pavuna_sao_joao_de_meriti",
+        "nome": "Pavuna/São João de Meriti",
+        "nome_normalizado": "pavuna_sao_joao_de_meriti",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.8056064,
+        "longitude": -43.3670241,
+        "osm_id": "node/823909007",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "PVA",
+        "wikidata": "Q10276044",
+        "wikipedia": "pt:Estação Pavuna/São João de Meriti",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3670241,
+          -22.8056064
         ]
       }
     },
@@ -763,7 +628,7 @@
         "ramais": [
           "belford_roxo"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Belford Roxo"
         ],
         "municipio": null,
@@ -776,13 +641,118 @@
         "railway_ref": null,
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -43.3753328,
           -22.7939466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_agostinho_porto",
+      "properties": {
+        "id": "sta_agostinho_porto",
+        "nome": "Agostinho Porto",
+        "nome_normalizado": "agostinho_porto",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.7886407,
+        "longitude": -43.3813924,
+        "osm_id": "node/993784202",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "AGO",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3813924,
+          -22.7886407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_coelho_da_rocha",
+      "properties": {
+        "id": "sta_coelho_da_rocha",
+        "nome": "Coelho da Rocha",
+        "nome_normalizado": "coelho_da_rocha",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.7787292,
+        "longitude": -43.3873469,
+        "osm_id": "node/993784935",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "CRA",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3873469,
+          -22.7787292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_belford_roxo",
+      "properties": {
+        "id": "sta_belford_roxo",
+        "nome": "Belford Roxo",
+        "nome_normalizado": "belford_roxo",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "belford_roxo"
+        ],
+        "ramais_nomes": [
+          "Belford Roxo"
+        ],
+        "municipio": "Belford Roxo",
+        "uf": "RJ",
+        "latitude": -22.7640713,
+        "longitude": -43.399816,
+        "osm_id": "node/6753788981",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "BRX",
+        "wikidata": "Q10275598",
+        "wikipedia": "pt:Estação Belford Roxo",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.399816,
+          -22.7640713
         ]
       }
     }

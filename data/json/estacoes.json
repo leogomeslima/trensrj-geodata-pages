@@ -1,577 +1,67 @@
 {
   "metadata": {
-    "projeto": "SuperVia GeoData API",
-    "descricao": "API estática/local para consulta de estações da SuperVia e consumo GeoJSON pelo QGIS.",
-    "versao": "1.0.0",
+    "projeto": "SuperVia GeoData Pages",
+    "descricao": "Base estática georreferenciada das estações ferroviárias da SuperVia RJ, corrigida por curadoria e consulta complementar de faltantes.",
+    "versao": "1.1.0",
     "operador": "SuperVia",
     "estado": "Rio de Janeiro",
     "pais": "Brasil",
     "srid": "EPSG:4326",
-    "origem": "Arquivo GeoJSON exportado do Overpass/OpenStreetMap anexado na conversa",
+    "origem": "OpenStreetMap/Overpass + curadoria manual por lista mestre",
     "licenca_dados": "OpenStreetMap/ODbL",
     "ultima_atualizacao": "2026-06-26",
     "total_estacoes": 103,
     "dataset": "estacoes_supervia",
-    "total_registros": 103
+    "total_registros": 103,
+    "correcao": {
+      "extras_removidos": [
+        "Adeus",
+        "Alemão",
+        "Itararé",
+        "Palmeiras"
+      ],
+      "duplicidades_resolvidas": [
+        {
+          "nome": "Bonsucesso",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Manoel Belo",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Maracanã",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Paracambi",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Parque Estrela",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "São Cristóvão",
+          "quantidade_original": 2
+        }
+      ],
+      "estacoes_adicionadas": [
+        "Corte Oito",
+        "Santa Dalila",
+        "Santa Guilhermina",
+        "Jardim Nova Marília",
+        "Jororó",
+        "Citrolândia",
+        "Parada Ideal",
+        "Jardim Guapimirim",
+        "Parada Modelo",
+        "Parada Bananal"
+      ],
+      "faltantes_restantes": []
+    }
   },
   "data": [
-    {
-      "id": "sta_adeus",
-      "nome": "Adeus",
-      "nome_normalizado": "adeus",
-      "tipo": "estacao",
-      "operador": "Supervia",
-      "ramais": [],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8650525,
-        "longitude": -43.2611853,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1507143412",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "Supervia",
-        "network": null,
-        "railway_ref": "ADS",
-        "wikidata": "Q10275545",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_agostinho_porto",
-      "nome": "Agostinho Porto",
-      "nome_normalizado": "agostinho_porto",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7886407,
-        "longitude": -43.3813924,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/993784202",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "AGO",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_alemao",
-      "nome": "Alemão",
-      "nome_normalizado": "alemao",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.858162,
-        "longitude": -43.2710183,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1507143415",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "ALO",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_anchieta",
-      "nome": "Anchieta",
-      "nome_normalizado": "anchieta",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8244039,
-        "longitude": -43.4032236,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909110",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "ACT",
-        "wikidata": "Q10275564",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_augusto_vasconcelos",
-      "nome": "Augusto Vasconcelos",
-      "nome_normalizado": "augusto_vasconcelos",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8930412,
-        "longitude": -43.5373957,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909111",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "AVS",
-        "wikidata": "Q10275583",
-        "wikipedia": "pt:Estação Augusto Vasconcelos",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_austin",
-      "nome": "Austin",
-      "nome_normalizado": "austin",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Nova Iguaçu",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7202067,
-        "longitude": -43.5232928,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992850521",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "AUS",
-        "wikidata": "Q10275584",
-        "wikipedia": "pt:Estação Austin",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_bangu",
-      "nome": "Bangu",
-      "nome_normalizado": "bangu",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8753636,
-        "longitude": -43.4656958,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908896",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "BGU",
-        "wikidata": "Q10275590",
-        "wikipedia": "pt:Estação Bangu",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_barros_filho",
-      "nome": "Barros Filho",
-      "nome_normalizado": "barros_filho",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8332113,
-        "longitude": -43.3665604,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909057",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "BFO",
-        "wikidata": "Q10275594",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_belford_roxo",
-      "nome": "Belford Roxo",
-      "nome_normalizado": "belford_roxo",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": "Belford Roxo",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7640713,
-        "longitude": -43.399816,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/6753788981",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "BRX",
-        "wikidata": "Q10275598",
-        "wikipedia": "pt:Estação Belford Roxo",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_benjamim_do_monte",
-      "nome": "Benjamim do Monte",
-      "nome_normalizado": "benjamim_do_monte",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9062859,
-        "longitude": -43.5810156,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908910",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "BME",
-        "wikidata": "Q10275599",
-        "wikipedia": "pt:Estação Benjamim do Monte",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_bonsucesso",
-      "nome": "Bonsucesso",
-      "nome_normalizado": "bonsucesso",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8678816,
-        "longitude": -43.2552776,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908931",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "BCO",
-        "wikidata": "Q48862709",
-        "wikipedia": "pt:Estação Bonsucesso (Teleférico do Alemão)",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_bonsucesso",
-      "nome": "Bonsucesso",
-      "nome_normalizado": "bonsucesso",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8676107,
-        "longitude": -43.2552863,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/6750743893",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "BSS",
-        "wikidata": "Q10275607",
-        "wikipedia": "pt:Estação Bonsucesso (SuperVia)",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_bras_de_pina",
-      "nome": "Brás de Pina",
-      "nome_normalizado": "bras_de_pina",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8303878,
-        "longitude": -43.2930029,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909117",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "BPA",
-        "wikidata": "Q10275613",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_campo_grande",
-      "nome": "Campo Grande",
-      "nome_normalizado": "campo_grande",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9022661,
-        "longitude": -43.5600036,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909050",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "CGE",
-        "wikidata": "Q10275623",
-        "wikipedia": "pt:Estação Campo Grande (Rio de Janeiro)",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_campos_eliseos",
-      "nome": "Campos Elíseos",
-      "nome_normalizado": "campos_eliseos",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7040013,
-        "longitude": -43.2808277,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/331875799",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "CEL",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_cascadura",
-      "nome": "Cascadura",
-      "nome_normalizado": "cascadura",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8827346,
-        "longitude": -43.328066,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909065",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "CDA",
-        "wikidata": "Q10275635",
-        "wikipedia": "pt:Estação Cascadura",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_cavalcanti",
-      "nome": "Cavalcanti",
-      "nome_normalizado": "cavalcanti",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8745414,
-        "longitude": -43.3157493,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909073",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "CAV",
-        "wikidata": "Q10275636",
-        "wikipedia": "pt:Estação Cavalcanti",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
     {
       "id": "sta_central_do_brasil",
       "nome": "Central do Brasil",
@@ -584,6 +74,13 @@
         "santa_cruz",
         "belford_roxo",
         "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Deodoro",
+        "Japeri",
+        "Santa Cruz",
+        "Belford Roxo",
+        "Saracuruna"
       ],
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
@@ -604,1967 +101,9 @@
         "website": "https://www.supervia.com.br/"
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_coelho_da_rocha",
-      "nome": "Coelho da Rocha",
-      "nome_normalizado": "coelho_da_rocha",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7787292,
-        "longitude": -43.3873469,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/993784935",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "CRA",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_comendador_soares",
-      "nome": "Comendador Soares",
-      "nome_normalizado": "comendador_soares",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Nova Iguaçu",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7444109,
-        "longitude": -43.4884348,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992849871",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "CSS",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_cordovil",
-      "nome": "Cordovil",
-      "nome_normalizado": "cordovil",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8240151,
-        "longitude": -43.2959248,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909087",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "COR",
-        "wikidata": "Q10275668",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_cosmos",
-      "nome": "Cosmos",
-      "nome_normalizado": "cosmos",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9127658,
-        "longitude": -43.6144485,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909074",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "COS",
-        "wikidata": "Q10275672",
-        "wikipedia": "pt:Estação Cosmos",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_costa_barros",
-      "nome": "Costa Barros",
-      "nome_normalizado": "costa_barros",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8217976,
-        "longitude": -43.370258,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908922",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "COB",
-        "wikidata": "Q10275671",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_del_castilho",
-      "nome": "Del Castilho",
-      "nome_normalizado": "del_castilho",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8802009,
-        "longitude": -43.2703898,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908964",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "DEL",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_deodoro",
-      "nome": "Deodoro",
-      "nome_normalizado": "deodoro",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro",
-        "japeri",
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8550694,
-        "longitude": -43.3835251,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909099",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "DDO",
-        "wikidata": "Q10275687",
-        "wikipedia": "pt:Estação Deodoro",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_duque_de_caxias",
-      "nome": "Duque de Caxias",
-      "nome_normalizado": "duque_de_caxias",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7871665,
-        "longitude": -43.309552,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/331873876",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "DCX",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_edson_passos",
-      "nome": "Edson Passos",
-      "nome_normalizado": "edson_passos",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Nova Iguaçu",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.796228,
-        "longitude": -43.4226447,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992845669",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "EPS",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_engenheiro_pedreira",
-      "nome": "Engenheiro Pedreira",
-      "nome_normalizado": "engenheiro_pedreira",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Japeri",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6790646,
-        "longitude": -43.6055733,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992856860",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "EPA",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_engenho_novo",
-      "nome": "Engenho Novo",
-      "nome_normalizado": "engenho_novo",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9034589,
-        "longitude": -43.2707632,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/6744577066",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "ENO",
-        "wikidata": "Q10275739",
-        "wikipedia": "pt:Estação Engenho Novo",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_fragoso",
-      "nome": "Fragoso",
-      "nome_normalizado": "fragoso",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.5887586,
-        "longitude": -43.1844125,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1304246239",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "FRA",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_gramacho",
-      "nome": "Gramacho",
-      "nome_normalizado": "gramacho",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7516685,
-        "longitude": -43.304217,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/331874228",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "GRM",
-        "wikidata": "Q10275833",
-        "wikipedia": "pt:Estação Gramacho",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_guapimirim",
-      "nome": "Guapimirim",
-      "nome_normalizado": "guapimirim",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "guapimirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.5198995,
-        "longitude": -42.9774603,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/6750726934",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "GPM",
-        "wikidata": "Q10275837",
-        "wikipedia": "pt:Estação Guapimirim",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_guilherme_da_silveira",
-      "nome": "Guilherme da Silveira",
-      "nome_normalizado": "guilherme_da_silveira",
-      "tipo": "estacao",
-      "operador": "SuperVIa",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8752578,
-        "longitude": -43.4566788,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908982",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVIa",
-        "network": null,
-        "railway_ref": "GSA",
-        "wikidata": "Q10275843",
-        "wikipedia": "pt:Estação Guilherme da Silveira",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_honorio_gurgel",
-      "nome": "Honório Gurgel",
-      "nome_normalizado": "honorio_gurgel",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8496197,
-        "longitude": -43.3572618,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909054",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "HON",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_imbarie",
-      "nome": "Imbariê",
-      "nome_normalizado": "imbarie",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6422246,
-        "longitude": -43.2195065,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1304214216",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "IMB",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_inhoaiba",
-      "nome": "Inhoaíba",
-      "nome_normalizado": "inhoaiba",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9090062,
-        "longitude": -43.5950918,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909108",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "IBA",
-        "wikidata": "Q10275872",
-        "wikipedia": "pt:Estação Inhoaíba",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_iriri",
-      "nome": "Iriri",
-      "nome_normalizado": "iriri",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "guapimirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6531321,
-        "longitude": -43.0662528,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1305341874",
-        "railway": "station",
-        "public_transport": "stop_position",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "IRI",
-        "wikidata": "Q10275879",
-        "wikipedia": "pt:Estação Iriri",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_itarare",
-      "nome": "Itararé",
-      "nome_normalizado": "itarare",
-      "tipo": "estacao",
-      "operador": "Supervia",
-      "ramais": [],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.861544,
-        "longitude": -43.2720617,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1507143377",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "Supervia",
-        "network": null,
-        "railway_ref": "IRE",
-        "wikidata": "Q48862424",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_jacarezinho",
-      "nome": "Jacarezinho",
-      "nome_normalizado": "jacarezinho",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8841636,
-        "longitude": -43.2550613,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908954",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "JAR",
-        "wikidata": "Q10275884",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_japeri",
-      "nome": "Japeri",
-      "nome_normalizado": "japeri",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri",
-        "paracambi"
-      ],
-      "municipio": "Japeri",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.644579,
-        "longitude": -43.6529816,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1278195937",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "JRI",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_jardim_primavera",
-      "nome": "Jardim Primavera",
-      "nome_normalizado": "jardim_primavera",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.690244,
-        "longitude": -43.2624394,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/331875825",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "JPR",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_lages",
-      "nome": "Lages",
-      "nome_normalizado": "lages",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "paracambi"
-      ],
-      "municipio": "Paracambi",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6217954,
-        "longitude": -43.7040855,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1278911578",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "LAJ",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_madureira",
-      "nome": "Madureira",
-      "nome_normalizado": "madureira",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro",
-        "japeri",
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8766775,
-        "longitude": -43.3376192,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908929",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "MRA",
-        "wikidata": "Q10275943",
-        "wikipedia": "pt:Estação Madureira",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_magalhaes_bastos",
-      "nome": "Magalhães Bastos",
-      "nome_normalizado": "magalhaes_bastos",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8680841,
-        "longitude": -43.413575,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909071",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MGA",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_mage",
-      "nome": "Magé",
-      "nome_normalizado": "mage",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "guapimirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6517348,
-        "longitude": -43.0425022,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1128223409",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MGE",
-        "wikidata": "Q10275945",
-        "wikipedia": "pt:Estação Magé",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_mangueira_jamelao",
-      "nome": "Mangueira / Jamelão",
-      "nome_normalizado": "mangueira_jamelao",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9085075,
-        "longitude": -43.2368314,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/6750699335",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MGA",
-        "wikidata": "Q10275948",
-        "wikipedia": null,
-        "website": "https://www.supervia.com.br/pt-br/estacao/mangueirajamelao"
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_manguinhos",
-      "nome": "Manguinhos",
-      "nome_normalizado": "manguinhos",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8796755,
-        "longitude": -43.2508881,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/6753772513",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MGS",
-        "wikidata": "Q10275951",
-        "wikipedia": "pt:Estação Manguinhos",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_manoel_belo",
-      "nome": "Manoel Belo",
-      "nome_normalizado": "manoel_belo",
-      "tipo": "estacao",
-      "operador": "Supervia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6304749,
-        "longitude": -43.2104667,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "way/115429782",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "Supervia",
-        "network": "Ramal Vila Inhomirim",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_manoel_belo",
-      "nome": "Manoel Belo",
-      "nome_normalizado": "manoel_belo",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6304408,
-        "longitude": -43.2104943,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1304217915",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "BEM",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_maracana",
-      "nome": "Maracanã",
-      "nome_normalizado": "maracana",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro",
-        "japeri",
-        "santa_cruz",
-        "belford_roxo",
-        "saracuruna"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9093268,
-        "longitude": -43.2333606,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "way/288792009",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_maracana",
-      "nome": "Maracanã",
-      "nome_normalizado": "maracana",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro",
-        "japeri",
-        "santa_cruz",
-        "belford_roxo",
-        "saracuruna"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9092963,
-        "longitude": -43.2332875,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/712849021",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MNA",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_marechal_hermes",
-      "nome": "Marechal Hermes",
-      "nome_normalizado": "marechal_hermes",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8607745,
-        "longitude": -43.3712874,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908966",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MHS",
-        "wikidata": "Q10275960",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_meier",
-      "nome": "Méier",
-      "nome_normalizado": "meier",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9017297,
-        "longitude": -43.278034,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909075",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MER",
-        "wikidata": "Q10276000",
-        "wikipedia": "pt:Estação Méier",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_mercadao_de_madureira",
-      "nome": "Mercadão de Madureira",
-      "nome_normalizado": "mercadao_de_madureira",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8732169,
-        "longitude": -43.336866,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908996",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "MGO",
-        "wikidata": "Q10275980",
-        "wikipedia": "pt:Estação Mercadão de Madureira",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_mesquita",
-      "nome": "Mesquita",
-      "nome_normalizado": "mesquita",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Mesquita",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7825527,
-        "longitude": -43.4286665,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992846878",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MES",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_mocidade_padre_miguel",
-      "nome": "Mocidade/Padre Miguel",
-      "nome_normalizado": "mocidade_padre_miguel",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8750904,
-        "longitude": -43.4476634,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909046",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "PML",
-        "wikidata": "Q10275988",
-        "wikipedia": "pt:Estação Mocidade/Padre Miguel",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_morabi",
-      "nome": "Morabi",
-      "nome_normalizado": "morabi",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6584732,
-        "longitude": -43.2305991,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1304139978",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "MBI",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_nilopolis",
-      "nome": "Nilópolis",
-      "nome_normalizado": "nilopolis",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Nilópolis",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8085879,
-        "longitude": -43.4150127,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992841159",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "NLS",
-        "wikidata": "Q10276006",
-        "wikipedia": "pt:Estação Nilópolis",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_nova_iguacu",
-      "nome": "Nova Iguaçu",
-      "nome_normalizado": "nova_iguacu",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Nova Iguaçu",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7606593,
-        "longitude": -43.4500852,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "way/91617869",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "NIU",
-        "wikidata": "Q10276011",
-        "wikipedia": "pt:Estação Nova Iguaçu",
-        "website": "https://www.supervia.com.br/pt-br/estacao/nova-iguacu"
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_olaria",
-      "nome": "Olaria",
-      "nome_normalizado": "olaria",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8471867,
-        "longitude": -43.2663633,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909122",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "OLA",
-        "wikidata": "Q10276014",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_olimpica_de_engenho_de_dentro",
-      "nome": "Olímpica de Engenho de Dentro",
-      "nome_normalizado": "olimpica_de_engenho_de_dentro",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro",
-        "japeri",
-        "santa_cruz"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.895595,
-        "longitude": -43.2936902,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908958",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "EDO",
-        "wikidata": "Q10276017",
-        "wikipedia": "pt:Estação Olímpica de Engenho de Dentro",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_olinda",
-      "nome": "Olinda",
-      "nome_normalizado": "olinda",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Nilópolis",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8174204,
-        "longitude": -43.4100058,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992840767",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "OLI",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_oswaldo_cruz",
-      "nome": "Oswaldo Cruz",
-      "nome_normalizado": "oswaldo_cruz",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8691928,
-        "longitude": -43.3501396,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909024",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "OCZ",
-        "wikidata": "Q10276023",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_paciencia",
-      "nome": "Paciência",
-      "nome_normalizado": "paciencia",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9162516,
-        "longitude": -43.6324651,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909093",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PAC",
-        "wikidata": "Q10276025",
-        "wikipedia": "pt:Estação Paciência",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_palmeiras",
-      "nome": "Palmeiras",
-      "nome_normalizado": "palmeiras",
-      "tipo": "estacao",
-      "operador": "Supervia",
-      "ramais": [],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8629567,
-        "longitude": -43.2815241,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1507143404",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "Supervia",
-        "network": null,
-        "railway_ref": "PMS",
-        "wikidata": "Q48862693",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_paracambi",
-      "nome": "Paracambi",
-      "nome_normalizado": "paracambi",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "paracambi"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6115362,
-        "longitude": -43.7108646,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "way/626544054",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "Paracambi",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_paracambi",
-      "nome": "Paracambi",
-      "nome_normalizado": "paracambi",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "paracambi"
-      ],
-      "municipio": "Paracambi",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6112575,
-        "longitude": -43.7107102,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1277781330",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PBI",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_parada_angelica",
-      "nome": "Parada Angélica",
-      "nome_normalizado": "parada_angelica",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6207231,
-        "longitude": -43.2024346,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/8638310827",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PAG",
-        "wikidata": "Q10276027",
-        "wikipedia": "pt:Estação Parada Angélica",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_parada_de_lucas",
-      "nome": "Parada de Lucas",
-      "nome_normalizado": "parada_de_lucas",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8166618,
-        "longitude": -43.3007438,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909094",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "LUC",
-        "wikidata": "Q10276038",
-        "wikipedia": "pt:Estação Parada de Lucas",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_parque_estrela",
-      "nome": "Parque Estrela",
-      "nome_normalizado": "parque_estrela",
-      "tipo": "estacao",
-      "operador": "Supervia",
-      "ramais": [
-        "guapimirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6502864,
-        "longitude": -43.2082176,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "way/90757423",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "Supervia",
-        "network": "Ramal Guapimirim",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_parque_estrela",
-      "nome": "Parque Estrela",
-      "nome_normalizado": "parque_estrela",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "guapimirim"
-      ],
-      "municipio": "Magé",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6502692,
-        "longitude": -43.2082276,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1053355284",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PQE",
-        "wikidata": "Q10276040",
-        "wikipedia": "pt:Estação Parque Estrela",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_pavuna_sao_joao_de_meriti",
-      "nome": "Pavuna/São João de Meriti",
-      "nome_normalizado": "pavuna_sao_joao_de_meriti",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8056064,
-        "longitude": -43.3670241,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909007",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PVA",
-        "wikidata": "Q10276044",
-        "wikipedia": "pt:Estação Pavuna/São João de Meriti",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_penha",
-      "nome": "Penha",
-      "nome_normalizado": "penha",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.840384,
-        "longitude": -43.278626,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908970",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PEN",
-        "wikidata": "Q10276050",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_penha_circular",
-      "nome": "Penha Circular",
-      "nome_normalizado": "penha_circular",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8366343,
-        "longitude": -43.2850429,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909101",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PCR",
-        "wikidata": "Q10276051",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_piabeta",
-      "nome": "Piabetá",
-      "nome_normalizado": "piabeta",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6094246,
-        "longitude": -43.1796584,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1304242080",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "PBA",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_piedade",
-      "nome": "Piedade",
-      "nome_normalizado": "piedade",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8903992,
-        "longitude": -43.3096599,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909055",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PIE",
-        "wikidata": "Q10276055",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_pilares",
-      "nome": "Pilares",
-      "nome_normalizado": "pilares",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.880979,
-        "longitude": -43.2915738,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909080",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "PLA",
-        "wikidata": "Q10276056",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     },
     {
@@ -2575,6 +114,9 @@
       "operador": "SuperVia",
       "ramais": [
         "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
       ],
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
@@ -2595,405 +137,9 @@
         "website": null
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_prefeito_bento_ribeiro",
-      "nome": "Prefeito Bento Ribeiro",
-      "nome_normalizado": "prefeito_bento_ribeiro",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8643462,
-        "longitude": -43.3616461,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909118",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "BRO",
-        "wikidata": "Q10276065",
-        "wikipedia": "pt:Estação Prefeito Bento Ribeiro",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_presidente_juscelino",
-      "nome": "Presidente Juscelino",
-      "nome_normalizado": "presidente_juscelino",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Mesquita",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7700212,
-        "longitude": -43.4344219,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/992848083",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "JUS",
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_queimados",
-      "nome": "Queimados",
-      "nome_normalizado": "queimados",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Queimados",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.7161091,
-        "longitude": -43.555896,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "way/1216351470",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "QMO",
-        "wikidata": "Q10276078",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_quintino",
-      "nome": "Quintino",
-      "nome_normalizado": "quintino",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8885203,
-        "longitude": -43.3212246,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908912",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "QTO",
-        "wikidata": "Q10276080",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_ramos",
-      "nome": "Ramos",
-      "nome_normalizado": "ramos",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8550913,
-        "longitude": -43.2600925,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909027",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "RMS",
-        "wikidata": "Q10276084",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_realengo",
-      "nome": "Realengo",
-      "nome_normalizado": "realengo",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8747603,
-        "longitude": -43.4294083,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908935",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "REA",
-        "wikidata": "Q10276087",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_riachuelo",
-      "nome": "Riachuelo",
-      "nome_normalizado": "riachuelo",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9014724,
-        "longitude": -43.2555117,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909091",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": "SuperVia",
-        "railway_ref": "RCO",
-        "wikidata": "Q10276092",
-        "wikipedia": "pt:Estação Riachuelo",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_ricardo_de_albuquerque",
-      "nome": "Ricardo de Albuquerque",
-      "nome_normalizado": "ricardo_de_albuquerque",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "japeri"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8403788,
-        "longitude": -43.3984286,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909078",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "RIC",
-        "wikidata": "Q10276095",
-        "wikipedia": "pt:Estação Ricardo de Albuquerque",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_rocha_miranda",
-      "nome": "Rocha Miranda",
-      "nome_normalizado": "rocha_miranda",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8546618,
-        "longitude": -43.3517885,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909092",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "RMA",
-        "wikidata": "Q10276099",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_sampaio",
-      "nome": "Sampaio",
-      "nome_normalizado": "sampaio",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9019779,
-        "longitude": -43.2620752,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909083",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "SPO",
-        "wikidata": "Q10276123",
-        "wikipedia": "pt:Estação Sampaio",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_santa_cruz",
-      "nome": "Santa Cruz",
-      "nome_normalizado": "santa_cruz",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9155501,
-        "longitude": -43.6840898,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908945",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "SCZ",
-        "wikidata": "Q10276131",
-        "wikipedia": "pt:Estação Santa Cruz (Rio de Janeiro)",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_santissimo",
-      "nome": "Santíssimo",
-      "nome_normalizado": "santissimo",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
-      ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8796485,
-        "longitude": -43.5113977,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909107",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "STO",
-        "wikidata": "Q10276134",
-        "wikipedia": "pt:Estação Santíssimo",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     },
     {
@@ -3009,42 +155,12 @@
         "belford_roxo",
         "saracuruna"
       ],
-      "municipio": "Rio de Janeiro",
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.9095585,
-        "longitude": -43.2227819,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "way/442465289",
-        "railway": null,
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_sao_cristovao",
-      "nome": "São Cristóvão",
-      "nome_normalizado": "sao_cristovao",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "deodoro",
-        "japeri",
-        "santa_cruz",
-        "belford_roxo",
-        "saracuruna"
+      "ramais_nomes": [
+        "Deodoro",
+        "Japeri",
+        "Santa Cruz",
+        "Belford Roxo",
+        "Saracuruna"
       ],
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
@@ -3065,9 +181,89 @@
         "website": null
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_maracana",
+      "nome": "Maracanã",
+      "nome_normalizado": "maracana",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro",
+        "japeri",
+        "santa_cruz",
+        "belford_roxo",
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Deodoro",
+        "Japeri",
+        "Santa Cruz",
+        "Belford Roxo",
+        "Saracuruna"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9092963,
+        "longitude": -43.2332875,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/712849021",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MNA",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_mangueira_jamelao",
+      "nome": "Mangueira/Jamelão",
+      "nome_normalizado": "mangueira_jamelao",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9085075,
+        "longitude": -43.2368314,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/6750699335",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MGA",
+        "wikidata": "Q10275948",
+        "wikipedia": null,
+        "website": "https://www.supervia.com.br/pt-br/estacao/mangueirajamelao"
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     },
     {
@@ -3078,6 +274,9 @@
       "operador": "SuperVia",
       "ramais": [
         "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
       ],
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
@@ -3098,276 +297,1031 @@
         "website": null
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     },
     {
-      "id": "sta_saracuruna",
-      "nome": "Saracuruna",
-      "nome_normalizado": "saracuruna",
+      "id": "sta_riachuelo",
+      "nome": "Riachuelo",
+      "nome_normalizado": "riachuelo",
       "tipo": "estacao",
       "operador": "SuperVia",
       "ramais": [
-        "saracuruna",
-        "vila_inhomirim",
-        "guapimirim"
+        "deodoro"
       ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.6777531,
-        "longitude": -43.247197,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1053355283",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "SAR",
-        "wikidata": "Q10276137",
-        "wikipedia": "pt:Estação Saracuruna",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_senador_camara",
-      "nome": "Senador Camará",
-      "nome_normalizado": "senador_camara",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "santa_cruz"
+      "ramais_nomes": [
+        "Deodoro"
       ],
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
       "coordenadas": {
-        "latitude": -22.8757923,
-        "longitude": -43.4861142,
+        "latitude": -22.9014724,
+        "longitude": -43.2555117,
         "srid": "EPSG:4326"
       },
       "osm": {
-        "id": "node/823908998",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "SEN",
-        "wikidata": "Q10276143",
-        "wikipedia": "pt:Estação Senador Camará",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_surui",
-      "nome": "Suruí",
-      "nome_normalizado": "surui",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "guapimirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.662995,
-        "longitude": -43.1289983,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1058120139",
+        "id": "node/823909091",
         "railway": "station",
         "public_transport": "station",
         "operator": "SuperVia",
         "network": "SuperVia",
-        "railway_ref": "SUR",
-        "wikidata": "Q10276153",
-        "wikipedia": "pt:Estação Suruí",
+        "railway_ref": "RCO",
+        "wikidata": "Q10276092",
+        "wikipedia": "pt:Estação Riachuelo",
         "website": null
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     },
     {
-      "id": "sta_tancredo_neves",
-      "nome": "Tancredo Neves",
-      "nome_normalizado": "tancredo_neves",
+      "id": "sta_sampaio",
+      "nome": "Sampaio",
+      "nome_normalizado": "sampaio",
       "tipo": "estacao",
       "operador": "SuperVia",
       "ramais": [
-        "santa_cruz"
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9019779,
+        "longitude": -43.2620752,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909083",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "SPO",
+        "wikidata": "Q10276123",
+        "wikipedia": "pt:Estação Sampaio",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_engenho_novo",
+      "nome": "Engenho Novo",
+      "nome_normalizado": "engenho_novo",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
       ],
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
       "coordenadas": {
-        "latitude": -22.9188724,
-        "longitude": -43.6493079,
+        "latitude": -22.9034589,
+        "longitude": -43.2707632,
         "srid": "EPSG:4326"
       },
       "osm": {
-        "id": "node/823908904",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "TNS",
-        "wikidata": "Q10276177",
-        "wikipedia": "pt:Estação Tancredo Neves",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_tomas_coelho",
-      "nome": "Tomás Coelho",
-      "nome_normalizado": "tomas_coelho",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8690481,
-        "longitude": -43.3052837,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823908947",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "TOM",
-        "wikidata": "Q10276189",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_triagem",
-      "nome": "Triagem",
-      "nome_normalizado": "triagem",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "belford_roxo",
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8967174,
-        "longitude": -43.2440972,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/712849012",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "TRI",
-        "wikidata": "Q10276194",
-        "wikipedia": "pt:Estação Triagem (SuperVia)",
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_vigario_geral",
-      "nome": "Vigário Geral",
-      "nome_normalizado": "vigario_geral",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "saracuruna"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.8052642,
-        "longitude": -43.3054785,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/823909015",
-        "railway": "station",
-        "public_transport": "station",
-        "operator": "SuperVia",
-        "network": null,
-        "railway_ref": "VGL",
-        "wikidata": "Q10276215",
-        "wikipedia": null,
-        "website": null
-      },
-      "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
-      }
-    },
-    {
-      "id": "sta_vila_inhomirim",
-      "nome": "Vila Inhomirim",
-      "nome_normalizado": "vila_inhomirim",
-      "tipo": "estacao",
-      "operador": "SuperVia",
-      "ramais": [
-        "vila_inhomirim"
-      ],
-      "municipio": null,
-      "uf": "RJ",
-      "coordenadas": {
-        "latitude": -22.5708955,
-        "longitude": -43.1846121,
-        "srid": "EPSG:4326"
-      },
-      "osm": {
-        "id": "node/1304247564",
+        "id": "node/6744577066",
         "railway": "station",
         "public_transport": "station",
         "operator": "SuperVia",
         "network": "SuperVia",
-        "railway_ref": "VIM",
-        "wikidata": "Q10276218",
-        "wikipedia": "pt:Estação Vila Inhomirim",
+        "railway_ref": "ENO",
+        "wikidata": "Q10275739",
+        "wikipedia": "pt:Estação Engenho Novo",
         "website": null
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_meier",
+      "nome": "Méier",
+      "nome_normalizado": "meier",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9017297,
+        "longitude": -43.278034,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909075",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MER",
+        "wikidata": "Q10276000",
+        "wikipedia": "pt:Estação Méier",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_engenho_de_dentro",
+      "nome": "Engenho de Dentro",
+      "nome_normalizado": "engenho_de_dentro",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro",
+        "japeri",
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Deodoro",
+        "Japeri",
+        "Santa Cruz"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.895595,
+        "longitude": -43.2936902,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908958",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "EDO",
+        "wikidata": "Q10276017",
+        "wikipedia": "pt:Estação Olímpica de Engenho de Dentro",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_piedade",
+      "nome": "Piedade",
+      "nome_normalizado": "piedade",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8903992,
+        "longitude": -43.3096599,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909055",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PIE",
+        "wikidata": "Q10276055",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_quintino",
+      "nome": "Quintino",
+      "nome_normalizado": "quintino",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8885203,
+        "longitude": -43.3212246,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908912",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "QTO",
+        "wikidata": "Q10276080",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_cascadura",
+      "nome": "Cascadura",
+      "nome_normalizado": "cascadura",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8827346,
+        "longitude": -43.328066,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909065",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "CDA",
+        "wikidata": "Q10275635",
+        "wikipedia": "pt:Estação Cascadura",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_madureira",
+      "nome": "Madureira",
+      "nome_normalizado": "madureira",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro",
+        "japeri",
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Deodoro",
+        "Japeri",
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8766775,
+        "longitude": -43.3376192,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908929",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "MRA",
+        "wikidata": "Q10275943",
+        "wikipedia": "pt:Estação Madureira",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_oswaldo_cruz",
+      "nome": "Oswaldo Cruz",
+      "nome_normalizado": "oswaldo_cruz",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8691928,
+        "longitude": -43.3501396,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909024",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "OCZ",
+        "wikidata": "Q10276023",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_prefeito_bento_ribeiro",
+      "nome": "Prefeito Bento Ribeiro",
+      "nome_normalizado": "prefeito_bento_ribeiro",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8643462,
+        "longitude": -43.3616461,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909118",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "BRO",
+        "wikidata": "Q10276065",
+        "wikipedia": "pt:Estação Prefeito Bento Ribeiro",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_marechal_hermes",
+      "nome": "Marechal Hermes",
+      "nome_normalizado": "marechal_hermes",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro"
+      ],
+      "ramais_nomes": [
+        "Deodoro"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8607745,
+        "longitude": -43.3712874,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908966",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MHS",
+        "wikidata": "Q10275960",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_deodoro",
+      "nome": "Deodoro",
+      "nome_normalizado": "deodoro",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "deodoro",
+        "japeri",
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Deodoro",
+        "Japeri",
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8550694,
+        "longitude": -43.3835251,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909099",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "DDO",
+        "wikidata": "Q10275687",
+        "wikipedia": "pt:Estação Deodoro",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_ricardo_de_albuquerque",
+      "nome": "Ricardo de Albuquerque",
+      "nome_normalizado": "ricardo_de_albuquerque",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8403788,
+        "longitude": -43.3984286,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909078",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "RIC",
+        "wikidata": "Q10276095",
+        "wikipedia": "pt:Estação Ricardo de Albuquerque",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_anchieta",
+      "nome": "Anchieta",
+      "nome_normalizado": "anchieta",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8244039,
+        "longitude": -43.4032236,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909110",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "ACT",
+        "wikidata": "Q10275564",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_olinda",
+      "nome": "Olinda",
+      "nome_normalizado": "olinda",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Nilópolis",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8174204,
+        "longitude": -43.4100058,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992840767",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "OLI",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_nilopolis",
+      "nome": "Nilópolis",
+      "nome_normalizado": "nilopolis",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Nilópolis",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8085879,
+        "longitude": -43.4150127,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992841159",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "NLS",
+        "wikidata": "Q10276006",
+        "wikipedia": "pt:Estação Nilópolis",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_edson_passos",
+      "nome": "Edson Passos",
+      "nome_normalizado": "edson_passos",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Nova Iguaçu",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.796228,
+        "longitude": -43.4226447,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992845669",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "EPS",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_mesquita",
+      "nome": "Mesquita",
+      "nome_normalizado": "mesquita",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Mesquita",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7825527,
+        "longitude": -43.4286665,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992846878",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MES",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_presidente_juscelino",
+      "nome": "Presidente Juscelino",
+      "nome_normalizado": "presidente_juscelino",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Mesquita",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7700212,
+        "longitude": -43.4344219,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992848083",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "JUS",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_nova_iguacu",
+      "nome": "Nova Iguaçu",
+      "nome_normalizado": "nova_iguacu",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Nova Iguaçu",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7606593,
+        "longitude": -43.4500852,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "way/91617869",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "NIU",
+        "wikidata": "Q10276011",
+        "wikipedia": "pt:Estação Nova Iguaçu",
+        "website": "https://www.supervia.com.br/pt-br/estacao/nova-iguacu"
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_comendador_soares",
+      "nome": "Comendador Soares",
+      "nome_normalizado": "comendador_soares",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Nova Iguaçu",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7444109,
+        "longitude": -43.4884348,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992849871",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "CSS",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_austin",
+      "nome": "Austin",
+      "nome_normalizado": "austin",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Nova Iguaçu",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7202067,
+        "longitude": -43.5232928,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992850521",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "AUS",
+        "wikidata": "Q10275584",
+        "wikipedia": "pt:Estação Austin",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_queimados",
+      "nome": "Queimados",
+      "nome_normalizado": "queimados",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Queimados",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7161091,
+        "longitude": -43.555896,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "way/1216351470",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "QMO",
+        "wikidata": "Q10276078",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_engenheiro_pedreira",
+      "nome": "Engenheiro Pedreira",
+      "nome_normalizado": "engenheiro_pedreira",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri"
+      ],
+      "ramais_nomes": [
+        "Japeri"
+      ],
+      "municipio": "Japeri",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6790646,
+        "longitude": -43.6055733,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/992856860",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "EPA",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_japeri",
+      "nome": "Japeri",
+      "nome_normalizado": "japeri",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "japeri",
+        "paracambi"
+      ],
+      "ramais_nomes": [
+        "Japeri",
+        "Paracambi"
+      ],
+      "municipio": "Japeri",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.644579,
+        "longitude": -43.6529816,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1278195937",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "JRI",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_lages",
+      "nome": "Lages",
+      "nome_normalizado": "lages",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "paracambi"
+      ],
+      "ramais_nomes": [
+        "Paracambi"
+      ],
+      "municipio": "Paracambi",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6217954,
+        "longitude": -43.7040855,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1278911578",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "LAJ",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_paracambi",
+      "nome": "Paracambi",
+      "nome_normalizado": "paracambi",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "paracambi"
+      ],
+      "ramais_nomes": [
+        "Paracambi"
+      ],
+      "municipio": "Paracambi",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6112575,
+        "longitude": -43.7107102,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1277781330",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PBI",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     },
     {
@@ -3378,6 +1332,9 @@
       "operador": "SuperVia",
       "ramais": [
         "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
       ],
       "municipio": "Rio de Janeiro",
       "uf": "RJ",
@@ -3398,9 +1355,983 @@
         "website": null
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_magalhaes_bastos",
+      "nome": "Magalhães Bastos",
+      "nome_normalizado": "magalhaes_bastos",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8680841,
+        "longitude": -43.413575,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909071",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MGA",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_realengo",
+      "nome": "Realengo",
+      "nome_normalizado": "realengo",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8747603,
+        "longitude": -43.4294083,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908935",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "REA",
+        "wikidata": "Q10276087",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_mocidade_padre_miguel",
+      "nome": "Mocidade/Padre Miguel",
+      "nome_normalizado": "mocidade_padre_miguel",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8750904,
+        "longitude": -43.4476634,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909046",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "PML",
+        "wikidata": "Q10275988",
+        "wikipedia": "pt:Estação Mocidade/Padre Miguel",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_guilherme_da_silveira",
+      "nome": "Guilherme da Silveira",
+      "nome_normalizado": "guilherme_da_silveira",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8752578,
+        "longitude": -43.4566788,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908982",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVIa",
+        "network": null,
+        "railway_ref": "GSA",
+        "wikidata": "Q10275843",
+        "wikipedia": "pt:Estação Guilherme da Silveira",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_bangu",
+      "nome": "Bangu",
+      "nome_normalizado": "bangu",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8753636,
+        "longitude": -43.4656958,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908896",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "BGU",
+        "wikidata": "Q10275590",
+        "wikipedia": "pt:Estação Bangu",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_senador_camara",
+      "nome": "Senador Camará",
+      "nome_normalizado": "senador_camara",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8757923,
+        "longitude": -43.4861142,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908998",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "SEN",
+        "wikidata": "Q10276143",
+        "wikipedia": "pt:Estação Senador Camará",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_santissimo",
+      "nome": "Santíssimo",
+      "nome_normalizado": "santissimo",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8796485,
+        "longitude": -43.5113977,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909107",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "STO",
+        "wikidata": "Q10276134",
+        "wikipedia": "pt:Estação Santíssimo",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_augusto_vasconcelos",
+      "nome": "Augusto Vasconcelos",
+      "nome_normalizado": "augusto_vasconcelos",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8930412,
+        "longitude": -43.5373957,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909111",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "AVS",
+        "wikidata": "Q10275583",
+        "wikipedia": "pt:Estação Augusto Vasconcelos",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_campo_grande",
+      "nome": "Campo Grande",
+      "nome_normalizado": "campo_grande",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9022661,
+        "longitude": -43.5600036,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909050",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "CGE",
+        "wikidata": "Q10275623",
+        "wikipedia": "pt:Estação Campo Grande (Rio de Janeiro)",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_benjamim_do_monte",
+      "nome": "Benjamim do Monte",
+      "nome_normalizado": "benjamim_do_monte",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9062859,
+        "longitude": -43.5810156,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908910",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "BME",
+        "wikidata": "Q10275599",
+        "wikipedia": "pt:Estação Benjamim do Monte",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_inhoaiba",
+      "nome": "Inhoaíba",
+      "nome_normalizado": "inhoaiba",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9090062,
+        "longitude": -43.5950918,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909108",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "IBA",
+        "wikidata": "Q10275872",
+        "wikipedia": "pt:Estação Inhoaíba",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_cosmos",
+      "nome": "Cosmos",
+      "nome_normalizado": "cosmos",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9127658,
+        "longitude": -43.6144485,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909074",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "COS",
+        "wikidata": "Q10275672",
+        "wikipedia": "pt:Estação Cosmos",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_paciencia",
+      "nome": "Paciência",
+      "nome_normalizado": "paciencia",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9162516,
+        "longitude": -43.6324651,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909093",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PAC",
+        "wikidata": "Q10276025",
+        "wikipedia": "pt:Estação Paciência",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_tancredo_neves",
+      "nome": "Tancredo Neves",
+      "nome_normalizado": "tancredo_neves",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9188724,
+        "longitude": -43.6493079,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908904",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "TNS",
+        "wikidata": "Q10276177",
+        "wikipedia": "pt:Estação Tancredo Neves",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_santa_cruz",
+      "nome": "Santa Cruz",
+      "nome_normalizado": "santa_cruz",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "santa_cruz"
+      ],
+      "ramais_nomes": [
+        "Santa Cruz"
+      ],
+      "municipio": "Rio de Janeiro",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.9155501,
+        "longitude": -43.6840898,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908945",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "SCZ",
+        "wikidata": "Q10276131",
+        "wikipedia": "pt:Estação Santa Cruz (Rio de Janeiro)",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_triagem",
+      "nome": "Triagem",
+      "nome_normalizado": "triagem",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo",
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo",
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8967174,
+        "longitude": -43.2440972,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/712849012",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "TRI",
+        "wikidata": "Q10276194",
+        "wikipedia": "pt:Estação Triagem (SuperVia)",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_jacarezinho",
+      "nome": "Jacarezinho",
+      "nome_normalizado": "jacarezinho",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8841636,
+        "longitude": -43.2550613,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908954",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "JAR",
+        "wikidata": "Q10275884",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_del_castilho",
+      "nome": "Del Castilho",
+      "nome_normalizado": "del_castilho",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8802009,
+        "longitude": -43.2703898,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908964",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "DEL",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_pilares",
+      "nome": "Pilares",
+      "nome_normalizado": "pilares",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.880979,
+        "longitude": -43.2915738,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909080",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PLA",
+        "wikidata": "Q10276056",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_tomas_coelho",
+      "nome": "Tomás Coelho",
+      "nome_normalizado": "tomas_coelho",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8690481,
+        "longitude": -43.3052837,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908947",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "TOM",
+        "wikidata": "Q10276189",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_cavalcanti",
+      "nome": "Cavalcanti",
+      "nome_normalizado": "cavalcanti",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8745414,
+        "longitude": -43.3157493,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909073",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "CAV",
+        "wikidata": "Q10275636",
+        "wikipedia": "pt:Estação Cavalcanti",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_mercadao_de_madureira",
+      "nome": "Mercadão de Madureira",
+      "nome_normalizado": "mercadao_de_madureira",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8732169,
+        "longitude": -43.336866,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908996",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "MGO",
+        "wikidata": "Q10275980",
+        "wikipedia": "pt:Estação Mercadão de Madureira",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_rocha_miranda",
+      "nome": "Rocha Miranda",
+      "nome_normalizado": "rocha_miranda",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8546618,
+        "longitude": -43.3517885,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909092",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "RMA",
+        "wikidata": "Q10276099",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_honorio_gurgel",
+      "nome": "Honório Gurgel",
+      "nome_normalizado": "honorio_gurgel",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8496197,
+        "longitude": -43.3572618,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909054",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "HON",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_barros_filho",
+      "nome": "Barros Filho",
+      "nome_normalizado": "barros_filho",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8332113,
+        "longitude": -43.3665604,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909057",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "BFO",
+        "wikidata": "Q10275594",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_costa_barros",
+      "nome": "Costa Barros",
+      "nome_normalizado": "costa_barros",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8217976,
+        "longitude": -43.370258,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908922",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "COB",
+        "wikidata": "Q10275671",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_pavuna_sao_joao_de_meriti",
+      "nome": "Pavuna/São João de Meriti",
+      "nome_normalizado": "pavuna_sao_joao_de_meriti",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8056064,
+        "longitude": -43.3670241,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909007",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PVA",
+        "wikidata": "Q10276044",
+        "wikipedia": "pt:Estação Pavuna/São João de Meriti",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     },
     {
@@ -3411,6 +2342,9 @@
       "operador": "SuperVia",
       "ramais": [
         "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
       ],
       "municipio": null,
       "uf": "RJ",
@@ -3431,9 +2365,1453 @@
         "website": null
       },
       "validacao": {
-        "status": "pendente_revisao",
-        "metodo": "overpass_geojson",
-        "observacao": "Dados extraídos do arquivo GeoJSON anexado; revisar ramais e nomes antes de produção."
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_agostinho_porto",
+      "nome": "Agostinho Porto",
+      "nome_normalizado": "agostinho_porto",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7886407,
+        "longitude": -43.3813924,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/993784202",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "AGO",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_coelho_da_rocha",
+      "nome": "Coelho da Rocha",
+      "nome_normalizado": "coelho_da_rocha",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7787292,
+        "longitude": -43.3873469,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/993784935",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "CRA",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_belford_roxo",
+      "nome": "Belford Roxo",
+      "nome_normalizado": "belford_roxo",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "belford_roxo"
+      ],
+      "ramais_nomes": [
+        "Belford Roxo"
+      ],
+      "municipio": "Belford Roxo",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7640713,
+        "longitude": -43.399816,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/6753788981",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "BRX",
+        "wikidata": "Q10275598",
+        "wikipedia": "pt:Estação Belford Roxo",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_manguinhos",
+      "nome": "Manguinhos",
+      "nome_normalizado": "manguinhos",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8796755,
+        "longitude": -43.2508881,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/6753772513",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MGS",
+        "wikidata": "Q10275951",
+        "wikipedia": "pt:Estação Manguinhos",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_bonsucesso",
+      "nome": "Bonsucesso",
+      "nome_normalizado": "bonsucesso",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8676107,
+        "longitude": -43.2552863,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/6750743893",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "BSS",
+        "wikidata": "Q10275607",
+        "wikipedia": "pt:Estação Bonsucesso (SuperVia)",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_ramos",
+      "nome": "Ramos",
+      "nome_normalizado": "ramos",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8550913,
+        "longitude": -43.2600925,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909027",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "RMS",
+        "wikidata": "Q10276084",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_olaria",
+      "nome": "Olaria",
+      "nome_normalizado": "olaria",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8471867,
+        "longitude": -43.2663633,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909122",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "OLA",
+        "wikidata": "Q10276014",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_penha",
+      "nome": "Penha",
+      "nome_normalizado": "penha",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.840384,
+        "longitude": -43.278626,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823908970",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PEN",
+        "wikidata": "Q10276050",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_penha_circular",
+      "nome": "Penha Circular",
+      "nome_normalizado": "penha_circular",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8366343,
+        "longitude": -43.2850429,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909101",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PCR",
+        "wikidata": "Q10276051",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_bras_de_pina",
+      "nome": "Brás de Pina",
+      "nome_normalizado": "bras_de_pina",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8303878,
+        "longitude": -43.2930029,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909117",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "BPA",
+        "wikidata": "Q10275613",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_cordovil",
+      "nome": "Cordovil",
+      "nome_normalizado": "cordovil",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8240151,
+        "longitude": -43.2959248,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909087",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "COR",
+        "wikidata": "Q10275668",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_parada_de_lucas",
+      "nome": "Parada de Lucas",
+      "nome_normalizado": "parada_de_lucas",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8166618,
+        "longitude": -43.3007438,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909094",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "LUC",
+        "wikidata": "Q10276038",
+        "wikipedia": "pt:Estação Parada de Lucas",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_vigario_geral",
+      "nome": "Vigário Geral",
+      "nome_normalizado": "vigario_geral",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.8052642,
+        "longitude": -43.3054785,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/823909015",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "VGL",
+        "wikidata": "Q10276215",
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_duque_de_caxias",
+      "nome": "Duque de Caxias",
+      "nome_normalizado": "duque_de_caxias",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7871665,
+        "longitude": -43.309552,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/331873876",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "DCX",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_corte_oito",
+      "nome": "Corte Oito",
+      "nome_normalizado": "corte_oito",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7723788,
+        "longitude": -43.3067016,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/2211412853",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "COO",
+        "wikidata": "Q10275670",
+        "wikipedia": "pt:Estação Corte 8",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_gramacho",
+      "nome": "Gramacho",
+      "nome_normalizado": "gramacho",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7516685,
+        "longitude": -43.304217,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/331874228",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "GRM",
+        "wikidata": "Q10275833",
+        "wikipedia": "pt:Estação Gramacho",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_campos_eliseos",
+      "nome": "Campos Elíseos",
+      "nome_normalizado": "campos_eliseos",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.7040013,
+        "longitude": -43.2808277,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/331875799",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "CEL",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_jardim_primavera",
+      "nome": "Jardim Primavera",
+      "nome_normalizado": "jardim_primavera",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna"
+      ],
+      "ramais_nomes": [
+        "Saracuruna"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.690244,
+        "longitude": -43.2624394,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/331875825",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "JPR",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_saracuruna",
+      "nome": "Saracuruna",
+      "nome_normalizado": "saracuruna",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "saracuruna",
+        "vila_inhomirim",
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Saracuruna",
+        "Vila Inhomirim",
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6777531,
+        "longitude": -43.247197,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1053355283",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "SAR",
+        "wikidata": "Q10276137",
+        "wikipedia": "pt:Estação Saracuruna",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_parque_estrela",
+      "nome": "Parque Estrela",
+      "nome_normalizado": "parque_estrela",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": "Magé",
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6502692,
+        "longitude": -43.2082276,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1053355284",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PQE",
+        "wikidata": "Q10276040",
+        "wikipedia": "pt:Estação Parque Estrela",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_santa_dalila",
+      "nome": "Santa Dalila",
+      "nome_normalizado": "santa_dalila",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6540211,
+        "longitude": -43.1525439,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1054609033",
+        "railway": "halt",
+        "public_transport": "stop_position",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "STD",
+        "wikidata": null,
+        "wikipedia": "pt:Parada Santa Dalila",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_santa_guilhermina",
+      "nome": "Santa Guilhermina",
+      "nome_normalizado": "santa_guilhermina",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6656727,
+        "longitude": -43.0927526,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/5913831124",
+        "railway": "halt",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "STG",
+        "wikidata": "Q10276037",
+        "wikipedia": "pt:Parada Santa Guilhermina",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_surui",
+      "nome": "Suruí",
+      "nome_normalizado": "surui",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.662995,
+        "longitude": -43.1289983,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1058120139",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "SUR",
+        "wikidata": "Q10276153",
+        "wikipedia": "pt:Estação Suruí",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_iriri",
+      "nome": "Iriri",
+      "nome_normalizado": "iriri",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6531321,
+        "longitude": -43.0662528,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1305341874",
+        "railway": "station",
+        "public_transport": "stop_position",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "IRI",
+        "wikidata": "Q10275879",
+        "wikipedia": "pt:Estação Iriri",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_mage",
+      "nome": "Magé",
+      "nome_normalizado": "mage",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6517348,
+        "longitude": -43.0425022,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1128223409",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MGE",
+        "wikidata": "Q10275945",
+        "wikipedia": "pt:Estação Magé",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_jardim_nova_marilia",
+      "nome": "Jardim Nova Marília",
+      "nome_normalizado": "jardim_nova_marilia",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.635828,
+        "longitude": -43.0303576,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/2211440347",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "JNM",
+        "wikidata": "Q10275889",
+        "wikipedia": "pt:Estação Jardim Nova Marília",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_jororo",
+      "nome": "Jororó",
+      "nome_normalizado": "jororo",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6053473,
+        "longitude": -43.0248374,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/2211440346",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "JRO",
+        "wikidata": "Q10275899",
+        "wikipedia": "pt:Estação Jororó",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_citrolandia",
+      "nome": "Citrolândia",
+      "nome_normalizado": "citrolandia",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5933293,
+        "longitude": -43.0155288,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/2211438810",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "CTR",
+        "wikidata": "Q10275654",
+        "wikipedia": "pt:Estação Citrolândia",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_parada_ideal",
+      "nome": "Parada Ideal",
+      "nome_normalizado": "parada_ideal",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5797933,
+        "longitude": -43.0054023,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/2211441993",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "IDL",
+        "wikidata": "Q10276033",
+        "wikipedia": "pt:Estação Parada Ideal",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_jardim_guapimirim",
+      "nome": "Jardim Guapimirim",
+      "nome_normalizado": "jardim_guapimirim",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5624614,
+        "longitude": -42.9950168,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/2211436751",
+        "railway": "halt",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "JDG",
+        "wikidata": "Q10276029",
+        "wikipedia": "pt:Estação Jardim Guapimirim",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_parada_modelo",
+      "nome": "Parada Modelo",
+      "nome_normalizado": "parada_modelo",
+      "tipo": "estacao",
+      "operador": "Central Logística",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5459658,
+        "longitude": -42.985108,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1128292080",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "Central Logística",
+        "network": null,
+        "railway_ref": "MDL",
+        "wikidata": "Q10276035",
+        "wikipedia": "pt:Estação Parada Modelo",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_parada_bananal",
+      "nome": "Parada Bananal",
+      "nome_normalizado": "parada_bananal",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5368967,
+        "longitude": -42.9822383,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/2211434416",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "BNL",
+        "wikidata": "Q10276028",
+        "wikipedia": "pt:Estação Parada Bananal",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado_adicionado",
+        "metodo": "overpass_busca_faltantes",
+        "observacao": "Estação adicionada a partir da consulta complementar de faltantes."
+      }
+    },
+    {
+      "id": "sta_guapimirim",
+      "nome": "Guapimirim",
+      "nome_normalizado": "guapimirim",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "guapimirim"
+      ],
+      "ramais_nomes": [
+        "Guapimirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5198995,
+        "longitude": -42.9774603,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/6750726934",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "GPM",
+        "wikidata": "Q10275837",
+        "wikipedia": "pt:Estação Guapimirim",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_morabi",
+      "nome": "Morabi",
+      "nome_normalizado": "morabi",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "vila_inhomirim"
+      ],
+      "ramais_nomes": [
+        "Vila Inhomirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6584732,
+        "longitude": -43.2305991,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1304139978",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "MBI",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_imbarie",
+      "nome": "Imbariê",
+      "nome_normalizado": "imbarie",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "vila_inhomirim"
+      ],
+      "ramais_nomes": [
+        "Vila Inhomirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6422246,
+        "longitude": -43.2195065,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1304214216",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "IMB",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_manoel_belo",
+      "nome": "Manoel Belo",
+      "nome_normalizado": "manoel_belo",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "vila_inhomirim"
+      ],
+      "ramais_nomes": [
+        "Vila Inhomirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6304408,
+        "longitude": -43.2104943,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1304217915",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "BEM",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_parada_angelica",
+      "nome": "Parada Angélica",
+      "nome_normalizado": "parada_angelica",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "vila_inhomirim"
+      ],
+      "ramais_nomes": [
+        "Vila Inhomirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6207231,
+        "longitude": -43.2024346,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/8638310827",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "PAG",
+        "wikidata": "Q10276027",
+        "wikipedia": "pt:Estação Parada Angélica",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_piabeta",
+      "nome": "Piabetá",
+      "nome_normalizado": "piabeta",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "vila_inhomirim"
+      ],
+      "ramais_nomes": [
+        "Vila Inhomirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.6094246,
+        "longitude": -43.1796584,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1304242080",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "PBA",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_fragoso",
+      "nome": "Fragoso",
+      "nome_normalizado": "fragoso",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "vila_inhomirim"
+      ],
+      "ramais_nomes": [
+        "Vila Inhomirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5887586,
+        "longitude": -43.1844125,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1304246239",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": null,
+        "railway_ref": "FRA",
+        "wikidata": null,
+        "wikipedia": null,
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
+      }
+    },
+    {
+      "id": "sta_vila_inhomirim",
+      "nome": "Vila Inhomirim",
+      "nome_normalizado": "vila_inhomirim",
+      "tipo": "estacao",
+      "operador": "SuperVia",
+      "ramais": [
+        "vila_inhomirim"
+      ],
+      "ramais_nomes": [
+        "Vila Inhomirim"
+      ],
+      "municipio": null,
+      "uf": "RJ",
+      "coordenadas": {
+        "latitude": -22.5708955,
+        "longitude": -43.1846121,
+        "srid": "EPSG:4326"
+      },
+      "osm": {
+        "id": "node/1304247564",
+        "railway": "station",
+        "public_transport": "station",
+        "operator": "SuperVia",
+        "network": "SuperVia",
+        "railway_ref": "VIM",
+        "wikidata": "Q10276218",
+        "wikipedia": "pt:Estação Vila Inhomirim",
+        "website": null
+      },
+      "validacao": {
+        "status": "validado",
+        "metodo": "curadoria_osm",
+        "observacao": "Registro deduplicado e alinhado à lista mestre da SuperVia."
       }
     }
   ]

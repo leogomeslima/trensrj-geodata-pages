@@ -1,13 +1,62 @@
 {
-  "projeto": "SuperVia GeoData API",
-  "descricao": "API estática/local para consulta de estações da SuperVia e consumo GeoJSON pelo QGIS.",
-  "versao": "1.0.0",
+  "projeto": "SuperVia GeoData Pages",
+  "descricao": "Base estática georreferenciada das estações ferroviárias da SuperVia RJ, corrigida por curadoria e consulta complementar de faltantes.",
+  "versao": "1.1.0",
   "operador": "SuperVia",
   "estado": "Rio de Janeiro",
   "pais": "Brasil",
   "srid": "EPSG:4326",
-  "origem": "Arquivo GeoJSON exportado do Overpass/OpenStreetMap anexado na conversa",
+  "origem": "OpenStreetMap/Overpass + curadoria manual por lista mestre",
   "licenca_dados": "OpenStreetMap/ODbL",
   "ultima_atualizacao": "2026-06-26",
-  "total_estacoes": 103
+  "total_estacoes": 103,
+  "dataset": "estacoes_supervia",
+  "total_registros": 103,
+  "correcao": {
+    "extras_removidos": [
+      "Adeus",
+      "Alemão",
+      "Itararé",
+      "Palmeiras"
+    ],
+    "duplicidades_resolvidas": [
+      {
+        "nome": "Bonsucesso",
+        "quantidade_original": 2
+      },
+      {
+        "nome": "Manoel Belo",
+        "quantidade_original": 2
+      },
+      {
+        "nome": "Maracanã",
+        "quantidade_original": 2
+      },
+      {
+        "nome": "Paracambi",
+        "quantidade_original": 2
+      },
+      {
+        "nome": "Parque Estrela",
+        "quantidade_original": 2
+      },
+      {
+        "nome": "São Cristóvão",
+        "quantidade_original": 2
+      }
+    ],
+    "estacoes_adicionadas": [
+      "Corte Oito",
+      "Santa Dalila",
+      "Santa Guilhermina",
+      "Jardim Nova Marília",
+      "Jororó",
+      "Citrolândia",
+      "Parada Ideal",
+      "Jardim Guapimirim",
+      "Parada Modelo",
+      "Parada Bananal"
+    ],
+    "faltantes_restantes": []
+  }
 }

@@ -1,46 +1,141 @@
 {
   "type": "FeatureCollection",
-  "name": "estacoes_supervia_vila_inhomirim",
+  "name": "estacoes_vila_inhomirim",
   "metadata": {
-    "ramal_id": "vila_inhomirim",
-    "ramal_nome": "Vila Inhomirim",
-    "total_registros": 9,
+    "projeto": "SuperVia GeoData Pages",
+    "descricao": "Base estática georreferenciada das estações ferroviárias da SuperVia RJ, corrigida por curadoria e consulta complementar de faltantes.",
+    "versao": "1.1.0",
+    "operador": "SuperVia",
+    "estado": "Rio de Janeiro",
+    "pais": "Brasil",
     "srid": "EPSG:4326",
-    "fonte": "OpenStreetMap/Overpass + curadoria"
+    "origem": "OpenStreetMap/Overpass + curadoria manual por lista mestre",
+    "licenca_dados": "OpenStreetMap/ODbL",
+    "ultima_atualizacao": "2026-06-26",
+    "total_estacoes": 8,
+    "dataset": "estacoes_supervia",
+    "total_registros": 103,
+    "correcao": {
+      "extras_removidos": [
+        "Adeus",
+        "Alemão",
+        "Itararé",
+        "Palmeiras"
+      ],
+      "duplicidades_resolvidas": [
+        {
+          "nome": "Bonsucesso",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Manoel Belo",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Maracanã",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Paracambi",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Parque Estrela",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "São Cristóvão",
+          "quantidade_original": 2
+        }
+      ],
+      "estacoes_adicionadas": [
+        "Corte Oito",
+        "Santa Dalila",
+        "Santa Guilhermina",
+        "Jardim Nova Marília",
+        "Jororó",
+        "Citrolândia",
+        "Parada Ideal",
+        "Jardim Guapimirim",
+        "Parada Modelo",
+        "Parada Bananal"
+      ],
+      "faltantes_restantes": []
+    },
+    "ramal": "vila_inhomirim"
   },
   "features": [
     {
       "type": "Feature",
-      "id": "sta_fragoso",
+      "id": "sta_saracuruna",
       "properties": {
-        "id": "sta_fragoso",
-        "nome": "Fragoso",
-        "nome_normalizado": "fragoso",
+        "id": "sta_saracuruna",
+        "nome": "Saracuruna",
+        "nome_normalizado": "saracuruna",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "saracuruna",
+          "vila_inhomirim",
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Saracuruna",
+          "Vila Inhomirim",
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6777531,
+        "longitude": -43.247197,
+        "osm_id": "node/1053355283",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "SAR",
+        "wikidata": "Q10276137",
+        "wikipedia": "pt:Estação Saracuruna",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.247197,
+          -22.6777531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_morabi",
+      "properties": {
+        "id": "sta_morabi",
+        "nome": "Morabi",
+        "nome_normalizado": "morabi",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
           "vila_inhomirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Vila Inhomirim"
         ],
         "municipio": null,
         "uf": "RJ",
-        "latitude": -22.5887586,
-        "longitude": -43.1844125,
-        "osm_id": "node/1304246239",
+        "latitude": -22.6584732,
+        "longitude": -43.2305991,
+        "osm_id": "node/1304139978",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "FRA",
+        "railway_ref": "MBI",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.1844125,
-          -22.5887586
+          -43.2305991,
+          -22.6584732
         ]
       }
     },
@@ -56,7 +151,7 @@
         "ramais": [
           "vila_inhomirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Vila Inhomirim"
         ],
         "municipio": null,
@@ -69,7 +164,7 @@
         "railway_ref": "IMB",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -87,46 +182,11 @@
         "nome": "Manoel Belo",
         "nome_normalizado": "manoel_belo",
         "tipo": "estacao",
-        "operador": "Supervia",
-        "ramais": [
-          "vila_inhomirim"
-        ],
-        "ramais_nome": [
-          "Vila Inhomirim"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.6304749,
-        "longitude": -43.2104667,
-        "osm_id": "way/115429782",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2104667,
-          -22.6304749
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_manoel_belo",
-      "properties": {
-        "id": "sta_manoel_belo",
-        "nome": "Manoel Belo",
-        "nome_normalizado": "manoel_belo",
-        "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
           "vila_inhomirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Vila Inhomirim"
         ],
         "municipio": null,
@@ -139,48 +199,13 @@
         "railway_ref": "BEM",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -43.2104943,
           -22.6304408
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_morabi",
-      "properties": {
-        "id": "sta_morabi",
-        "nome": "Morabi",
-        "nome_normalizado": "morabi",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "vila_inhomirim"
-        ],
-        "ramais_nome": [
-          "Vila Inhomirim"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.6584732,
-        "longitude": -43.2305991,
-        "osm_id": "node/1304139978",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "MBI",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2305991,
-          -22.6584732
         ]
       }
     },
@@ -196,7 +221,7 @@
         "ramais": [
           "vila_inhomirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Vila Inhomirim"
         ],
         "municipio": null,
@@ -209,7 +234,7 @@
         "railway_ref": "PAG",
         "wikidata": "Q10276027",
         "wikipedia": "pt:Estação Parada Angélica",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -231,7 +256,7 @@
         "ramais": [
           "vila_inhomirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Vila Inhomirim"
         ],
         "municipio": null,
@@ -244,7 +269,7 @@
         "railway_ref": "PBA",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -256,40 +281,36 @@
     },
     {
       "type": "Feature",
-      "id": "sta_saracuruna",
+      "id": "sta_fragoso",
       "properties": {
-        "id": "sta_saracuruna",
-        "nome": "Saracuruna",
-        "nome_normalizado": "saracuruna",
+        "id": "sta_fragoso",
+        "nome": "Fragoso",
+        "nome_normalizado": "fragoso",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
-          "saracuruna",
-          "vila_inhomirim",
-          "guapimirim"
+          "vila_inhomirim"
         ],
-        "ramais_nome": [
-          "Saracuruna",
-          "Vila Inhomirim",
-          "Guapimirim"
+        "ramais_nomes": [
+          "Vila Inhomirim"
         ],
         "municipio": null,
         "uf": "RJ",
-        "latitude": -22.6777531,
-        "longitude": -43.247197,
-        "osm_id": "node/1053355283",
+        "latitude": -22.5887586,
+        "longitude": -43.1844125,
+        "osm_id": "node/1304246239",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "SAR",
-        "wikidata": "Q10276137",
-        "wikipedia": "pt:Estação Saracuruna",
-        "status_validacao": "pendente_revisao"
+        "railway_ref": "FRA",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.247197,
-          -22.6777531
+          -43.1844125,
+          -22.5887586
         ]
       }
     },
@@ -305,7 +326,7 @@
         "ramais": [
           "vila_inhomirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Vila Inhomirim"
         ],
         "municipio": null,
@@ -318,7 +339,7 @@
         "railway_ref": "VIM",
         "wikidata": "Q10276218",
         "wikipedia": "pt:Estação Vila Inhomirim",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",

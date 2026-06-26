@@ -1,793 +1,760 @@
 {
   "metadata": {
-    "projeto": "SuperVia GeoData API",
-    "descricao": "API estática/local para consulta de estações da SuperVia e consumo GeoJSON pelo QGIS.",
-    "versao": "1.0.0",
-    "operador": "SuperVia",
-    "estado": "Rio de Janeiro",
-    "pais": "Brasil",
-    "srid": "EPSG:4326",
-    "origem": "Arquivo GeoJSON exportado do Overpass/OpenStreetMap anexado na conversa",
-    "licenca_dados": "OpenStreetMap/ODbL",
-    "ultima_atualizacao": "2026-06-26",
-    "total_estacoes": 103,
     "dataset": "estacao_ramal",
-    "total_registros": 129
+    "versao": "1.1.0",
+    "total_registros": 125,
+    "ultima_atualizacao": "2026-06-26"
   },
   "data": [
     {
-      "estacao_id": "sta_parque_estrela",
-      "ramal_id": "guapimirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_nova_iguacu",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_manoel_belo",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
+      "estacao_id": "sta_central_do_brasil",
       "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_duque_de_caxias",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_gramacho",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_campos_eliseos",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_jardim_primavera",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_paracambi",
-      "ramal_id": "paracambi",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_francisco_xavier",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_triagem",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_triagem",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sao_cristovao",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_maracana",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
+      "ordem": 1,
+      "terminal": true
     },
     {
       "estacao_id": "sta_praca_da_bandeira",
       "ramal_id": "deodoro",
-      "ordem": null,
+      "ordem": 2,
       "terminal": false
     },
     {
-      "estacao_id": "sta_central_do_brasil",
+      "estacao_id": "sta_sao_cristovao",
       "ramal_id": "deodoro",
-      "ordem": null,
+      "ordem": 3,
       "terminal": false
     },
     {
-      "estacao_id": "sta_central_do_brasil",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_central_do_brasil",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_central_do_brasil",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_central_do_brasil",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_bangu",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_tancredo_neves",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_benjamim_do_monte",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_quintino",
+      "estacao_id": "sta_maracana",
       "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_costa_barros",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_madureira",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_madureira",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_madureira",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_bonsucesso",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_realengo",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_santa_cruz",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_tomas_coelho",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_jacarezinho",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_olimpica_de_engenho_de_dentro",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_olimpica_de_engenho_de_dentro",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_olimpica_de_engenho_de_dentro",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_del_castilho",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_marechal_hermes",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_penha",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_guilherme_da_silveira",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_vila_militar",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_mercadao_de_madureira",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_senador_camara",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_pavuna_sao_joao_de_meriti",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_vigario_geral",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_oswaldo_cruz",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_ramos",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_mocidade_padre_miguel",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_campo_grande",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_honorio_gurgel",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_piedade",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_barros_filho",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_cascadura",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_magalhaes_bastos",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_cavalcanti",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_cosmos",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_meier",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_ricardo_de_albuquerque",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_pilares",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_sampaio",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_cordovil",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_riachuelo",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_rocha_miranda",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_paciencia",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_parada_de_lucas",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_deodoro",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_deodoro",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_deodoro",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_penha_circular",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_santissimo",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_inhoaiba",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_anchieta",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_augusto_vasconcelos",
-      "ramal_id": "santa_cruz",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_bras_de_pina",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_prefeito_bento_ribeiro",
-      "ramal_id": "deodoro",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_olaria",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_olinda",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_nilopolis",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_edson_passos",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_mesquita",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_presidente_juscelino",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_comendador_soares",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_austin",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_engenheiro_pedreira",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_vila_rosali",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_agostinho_porto",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_coelho_da_rocha",
-      "ramal_id": "belford_roxo",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_saracuruna",
-      "ramal_id": "saracuruna",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_saracuruna",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_saracuruna",
-      "ramal_id": "guapimirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_parque_estrela",
-      "ramal_id": "guapimirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_surui",
-      "ramal_id": "guapimirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_mage",
-      "ramal_id": "guapimirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_queimados",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_paracambi",
-      "ramal_id": "paracambi",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_japeri",
-      "ramal_id": "japeri",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_japeri",
-      "ramal_id": "paracambi",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_lages",
-      "ramal_id": "paracambi",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_morabi",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_imbarie",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_manoel_belo",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_piabeta",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_fragoso",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_vila_inhomirim",
-      "ramal_id": "vila_inhomirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_iriri",
-      "ramal_id": "guapimirim",
-      "ordem": null,
-      "terminal": false
-    },
-    {
-      "estacao_id": "sta_engenho_novo",
-      "ramal_id": "deodoro",
-      "ordem": null,
+      "ordem": 4,
       "terminal": false
     },
     {
       "estacao_id": "sta_mangueira_jamelao",
       "ramal_id": "deodoro",
-      "ordem": null,
+      "ordem": 5,
       "terminal": false
     },
     {
-      "estacao_id": "sta_guapimirim",
-      "ramal_id": "guapimirim",
-      "ordem": null,
+      "estacao_id": "sta_sao_francisco_xavier",
+      "ramal_id": "deodoro",
+      "ordem": 6,
       "terminal": false
     },
     {
-      "estacao_id": "sta_bonsucesso",
-      "ramal_id": "saracuruna",
-      "ordem": null,
+      "estacao_id": "sta_riachuelo",
+      "ramal_id": "deodoro",
+      "ordem": 7,
       "terminal": false
     },
     {
-      "estacao_id": "sta_manguinhos",
-      "ramal_id": "saracuruna",
-      "ordem": null,
+      "estacao_id": "sta_sampaio",
+      "ramal_id": "deodoro",
+      "ordem": 8,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_engenho_novo",
+      "ramal_id": "deodoro",
+      "ordem": 9,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_meier",
+      "ramal_id": "deodoro",
+      "ordem": 10,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_engenho_de_dentro",
+      "ramal_id": "deodoro",
+      "ordem": 11,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_piedade",
+      "ramal_id": "deodoro",
+      "ordem": 12,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_quintino",
+      "ramal_id": "deodoro",
+      "ordem": 13,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_cascadura",
+      "ramal_id": "deodoro",
+      "ordem": 14,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_madureira",
+      "ramal_id": "deodoro",
+      "ordem": 15,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_oswaldo_cruz",
+      "ramal_id": "deodoro",
+      "ordem": 16,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_prefeito_bento_ribeiro",
+      "ramal_id": "deodoro",
+      "ordem": 17,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_marechal_hermes",
+      "ramal_id": "deodoro",
+      "ordem": 18,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_deodoro",
+      "ramal_id": "deodoro",
+      "ordem": 19,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_central_do_brasil",
+      "ramal_id": "japeri",
+      "ordem": 1,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_sao_cristovao",
+      "ramal_id": "japeri",
+      "ordem": 2,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_maracana",
+      "ramal_id": "japeri",
+      "ordem": 3,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_engenho_de_dentro",
+      "ramal_id": "japeri",
+      "ordem": 4,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_madureira",
+      "ramal_id": "japeri",
+      "ordem": 5,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_deodoro",
+      "ramal_id": "japeri",
+      "ordem": 6,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_ricardo_de_albuquerque",
+      "ramal_id": "japeri",
+      "ordem": 7,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_anchieta",
+      "ramal_id": "japeri",
+      "ordem": 8,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_olinda",
+      "ramal_id": "japeri",
+      "ordem": 9,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_nilopolis",
+      "ramal_id": "japeri",
+      "ordem": 10,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_edson_passos",
+      "ramal_id": "japeri",
+      "ordem": 11,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_mesquita",
+      "ramal_id": "japeri",
+      "ordem": 12,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_presidente_juscelino",
+      "ramal_id": "japeri",
+      "ordem": 13,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_nova_iguacu",
+      "ramal_id": "japeri",
+      "ordem": 14,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_comendador_soares",
+      "ramal_id": "japeri",
+      "ordem": 15,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_austin",
+      "ramal_id": "japeri",
+      "ordem": 16,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_queimados",
+      "ramal_id": "japeri",
+      "ordem": 17,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_engenheiro_pedreira",
+      "ramal_id": "japeri",
+      "ordem": 18,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_japeri",
+      "ramal_id": "japeri",
+      "ordem": 19,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_central_do_brasil",
+      "ramal_id": "santa_cruz",
+      "ordem": 1,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_sao_cristovao",
+      "ramal_id": "santa_cruz",
+      "ordem": 2,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_maracana",
+      "ramal_id": "santa_cruz",
+      "ordem": 3,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_engenho_de_dentro",
+      "ramal_id": "santa_cruz",
+      "ordem": 4,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_madureira",
+      "ramal_id": "santa_cruz",
+      "ordem": 5,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_deodoro",
+      "ramal_id": "santa_cruz",
+      "ordem": 6,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_vila_militar",
+      "ramal_id": "santa_cruz",
+      "ordem": 7,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_magalhaes_bastos",
+      "ramal_id": "santa_cruz",
+      "ordem": 8,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_realengo",
+      "ramal_id": "santa_cruz",
+      "ordem": 9,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_mocidade_padre_miguel",
+      "ramal_id": "santa_cruz",
+      "ordem": 10,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_guilherme_da_silveira",
+      "ramal_id": "santa_cruz",
+      "ordem": 11,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_bangu",
+      "ramal_id": "santa_cruz",
+      "ordem": 12,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_senador_camara",
+      "ramal_id": "santa_cruz",
+      "ordem": 13,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_santissimo",
+      "ramal_id": "santa_cruz",
+      "ordem": 14,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_augusto_vasconcelos",
+      "ramal_id": "santa_cruz",
+      "ordem": 15,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_campo_grande",
+      "ramal_id": "santa_cruz",
+      "ordem": 16,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_benjamim_do_monte",
+      "ramal_id": "santa_cruz",
+      "ordem": 17,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_inhoaiba",
+      "ramal_id": "santa_cruz",
+      "ordem": 18,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_cosmos",
+      "ramal_id": "santa_cruz",
+      "ordem": 19,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_paciencia",
+      "ramal_id": "santa_cruz",
+      "ordem": 20,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_tancredo_neves",
+      "ramal_id": "santa_cruz",
+      "ordem": 21,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_santa_cruz",
+      "ramal_id": "santa_cruz",
+      "ordem": 22,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_central_do_brasil",
+      "ramal_id": "belford_roxo",
+      "ordem": 1,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_sao_cristovao",
+      "ramal_id": "belford_roxo",
+      "ordem": 2,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_maracana",
+      "ramal_id": "belford_roxo",
+      "ordem": 3,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_triagem",
+      "ramal_id": "belford_roxo",
+      "ordem": 4,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_jacarezinho",
+      "ramal_id": "belford_roxo",
+      "ordem": 5,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_del_castilho",
+      "ramal_id": "belford_roxo",
+      "ordem": 6,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_pilares",
+      "ramal_id": "belford_roxo",
+      "ordem": 7,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_tomas_coelho",
+      "ramal_id": "belford_roxo",
+      "ordem": 8,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_cavalcanti",
+      "ramal_id": "belford_roxo",
+      "ordem": 9,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_mercadao_de_madureira",
+      "ramal_id": "belford_roxo",
+      "ordem": 10,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_rocha_miranda",
+      "ramal_id": "belford_roxo",
+      "ordem": 11,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_honorio_gurgel",
+      "ramal_id": "belford_roxo",
+      "ordem": 12,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_barros_filho",
+      "ramal_id": "belford_roxo",
+      "ordem": 13,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_costa_barros",
+      "ramal_id": "belford_roxo",
+      "ordem": 14,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_pavuna_sao_joao_de_meriti",
+      "ramal_id": "belford_roxo",
+      "ordem": 15,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_vila_rosali",
+      "ramal_id": "belford_roxo",
+      "ordem": 16,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_agostinho_porto",
+      "ramal_id": "belford_roxo",
+      "ordem": 17,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_coelho_da_rocha",
+      "ramal_id": "belford_roxo",
+      "ordem": 18,
       "terminal": false
     },
     {
       "estacao_id": "sta_belford_roxo",
       "ramal_id": "belford_roxo",
-      "ordem": null,
+      "ordem": 19,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_central_do_brasil",
+      "ramal_id": "saracuruna",
+      "ordem": 1,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_sao_cristovao",
+      "ramal_id": "saracuruna",
+      "ordem": 2,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_maracana",
+      "ramal_id": "saracuruna",
+      "ordem": 3,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_triagem",
+      "ramal_id": "saracuruna",
+      "ordem": 4,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_manguinhos",
+      "ramal_id": "saracuruna",
+      "ordem": 5,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_bonsucesso",
+      "ramal_id": "saracuruna",
+      "ordem": 6,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_ramos",
+      "ramal_id": "saracuruna",
+      "ordem": 7,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_olaria",
+      "ramal_id": "saracuruna",
+      "ordem": 8,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_penha",
+      "ramal_id": "saracuruna",
+      "ordem": 9,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_penha_circular",
+      "ramal_id": "saracuruna",
+      "ordem": 10,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_bras_de_pina",
+      "ramal_id": "saracuruna",
+      "ordem": 11,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_cordovil",
+      "ramal_id": "saracuruna",
+      "ordem": 12,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_parada_de_lucas",
+      "ramal_id": "saracuruna",
+      "ordem": 13,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_vigario_geral",
+      "ramal_id": "saracuruna",
+      "ordem": 14,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_duque_de_caxias",
+      "ramal_id": "saracuruna",
+      "ordem": 15,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_corte_oito",
+      "ramal_id": "saracuruna",
+      "ordem": 16,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_gramacho",
+      "ramal_id": "saracuruna",
+      "ordem": 17,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_campos_eliseos",
+      "ramal_id": "saracuruna",
+      "ordem": 18,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_jardim_primavera",
+      "ramal_id": "saracuruna",
+      "ordem": 19,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_saracuruna",
+      "ramal_id": "saracuruna",
+      "ordem": 20,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_japeri",
+      "ramal_id": "paracambi",
+      "ordem": 1,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_lages",
+      "ramal_id": "paracambi",
+      "ordem": 2,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_paracambi",
+      "ramal_id": "paracambi",
+      "ordem": 3,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_saracuruna",
+      "ramal_id": "guapimirim",
+      "ordem": 1,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_parque_estrela",
+      "ramal_id": "guapimirim",
+      "ordem": 2,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_santa_dalila",
+      "ramal_id": "guapimirim",
+      "ordem": 3,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_santa_guilhermina",
+      "ramal_id": "guapimirim",
+      "ordem": 4,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_surui",
+      "ramal_id": "guapimirim",
+      "ordem": 5,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_iriri",
+      "ramal_id": "guapimirim",
+      "ordem": 6,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_mage",
+      "ramal_id": "guapimirim",
+      "ordem": 7,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_jardim_nova_marilia",
+      "ramal_id": "guapimirim",
+      "ordem": 8,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_jororo",
+      "ramal_id": "guapimirim",
+      "ordem": 9,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_citrolandia",
+      "ramal_id": "guapimirim",
+      "ordem": 10,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_parada_ideal",
+      "ramal_id": "guapimirim",
+      "ordem": 11,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_jardim_guapimirim",
+      "ramal_id": "guapimirim",
+      "ordem": 12,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_parada_modelo",
+      "ramal_id": "guapimirim",
+      "ordem": 13,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_parada_bananal",
+      "ramal_id": "guapimirim",
+      "ordem": 14,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_guapimirim",
+      "ramal_id": "guapimirim",
+      "ordem": 15,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_saracuruna",
+      "ramal_id": "vila_inhomirim",
+      "ordem": 1,
+      "terminal": true
+    },
+    {
+      "estacao_id": "sta_morabi",
+      "ramal_id": "vila_inhomirim",
+      "ordem": 2,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_imbarie",
+      "ramal_id": "vila_inhomirim",
+      "ordem": 3,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_manoel_belo",
+      "ramal_id": "vila_inhomirim",
+      "ordem": 4,
       "terminal": false
     },
     {
       "estacao_id": "sta_parada_angelica",
       "ramal_id": "vila_inhomirim",
-      "ordem": null,
+      "ordem": 5,
       "terminal": false
+    },
+    {
+      "estacao_id": "sta_piabeta",
+      "ramal_id": "vila_inhomirim",
+      "ordem": 6,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_fragoso",
+      "ramal_id": "vila_inhomirim",
+      "ordem": 7,
+      "terminal": false
+    },
+    {
+      "estacao_id": "sta_vila_inhomirim",
+      "ramal_id": "vila_inhomirim",
+      "ordem": 8,
+      "terminal": true
     }
   ]
 }

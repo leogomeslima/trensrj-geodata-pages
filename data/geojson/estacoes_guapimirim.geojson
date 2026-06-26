@@ -1,46 +1,246 @@
 {
   "type": "FeatureCollection",
-  "name": "estacoes_supervia_guapimirim",
+  "name": "estacoes_guapimirim",
   "metadata": {
-    "ramal_id": "guapimirim",
-    "ramal_nome": "Guapimirim",
-    "total_registros": 7,
+    "projeto": "SuperVia GeoData Pages",
+    "descricao": "Base estática georreferenciada das estações ferroviárias da SuperVia RJ, corrigida por curadoria e consulta complementar de faltantes.",
+    "versao": "1.1.0",
+    "operador": "SuperVia",
+    "estado": "Rio de Janeiro",
+    "pais": "Brasil",
     "srid": "EPSG:4326",
-    "fonte": "OpenStreetMap/Overpass + curadoria"
+    "origem": "OpenStreetMap/Overpass + curadoria manual por lista mestre",
+    "licenca_dados": "OpenStreetMap/ODbL",
+    "ultima_atualizacao": "2026-06-26",
+    "total_estacoes": 15,
+    "dataset": "estacoes_supervia",
+    "total_registros": 103,
+    "correcao": {
+      "extras_removidos": [
+        "Adeus",
+        "Alemão",
+        "Itararé",
+        "Palmeiras"
+      ],
+      "duplicidades_resolvidas": [
+        {
+          "nome": "Bonsucesso",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Manoel Belo",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Maracanã",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Paracambi",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Parque Estrela",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "São Cristóvão",
+          "quantidade_original": 2
+        }
+      ],
+      "estacoes_adicionadas": [
+        "Corte Oito",
+        "Santa Dalila",
+        "Santa Guilhermina",
+        "Jardim Nova Marília",
+        "Jororó",
+        "Citrolândia",
+        "Parada Ideal",
+        "Jardim Guapimirim",
+        "Parada Modelo",
+        "Parada Bananal"
+      ],
+      "faltantes_restantes": []
+    },
+    "ramal": "guapimirim"
   },
   "features": [
     {
       "type": "Feature",
-      "id": "sta_guapimirim",
+      "id": "sta_saracuruna",
       "properties": {
-        "id": "sta_guapimirim",
-        "nome": "Guapimirim",
-        "nome_normalizado": "guapimirim",
+        "id": "sta_saracuruna",
+        "nome": "Saracuruna",
+        "nome_normalizado": "saracuruna",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "saracuruna",
+          "vila_inhomirim",
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Saracuruna",
+          "Vila Inhomirim",
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6777531,
+        "longitude": -43.247197,
+        "osm_id": "node/1053355283",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "SAR",
+        "wikidata": "Q10276137",
+        "wikipedia": "pt:Estação Saracuruna",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.247197,
+          -22.6777531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_parque_estrela",
+      "properties": {
+        "id": "sta_parque_estrela",
+        "nome": "Parque Estrela",
+        "nome_normalizado": "parque_estrela",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
           "guapimirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Guapimirim"
         ],
-        "municipio": null,
+        "municipio": "Magé",
         "uf": "RJ",
-        "latitude": -22.5198995,
-        "longitude": -42.9774603,
-        "osm_id": "node/6750726934",
+        "latitude": -22.6502692,
+        "longitude": -43.2082276,
+        "osm_id": "node/1053355284",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "GPM",
-        "wikidata": "Q10275837",
-        "wikipedia": "pt:Estação Guapimirim",
-        "status_validacao": "pendente_revisao"
+        "railway_ref": "PQE",
+        "wikidata": "Q10276040",
+        "wikipedia": "pt:Estação Parque Estrela",
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -42.9774603,
-          -22.5198995
+          -43.2082276,
+          -22.6502692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_santa_dalila",
+      "properties": {
+        "id": "sta_santa_dalila",
+        "nome": "Santa Dalila",
+        "nome_normalizado": "santa_dalila",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6540211,
+        "longitude": -43.1525439,
+        "osm_id": "node/1054609033",
+        "railway": "halt",
+        "public_transport": "stop_position",
+        "railway_ref": "STD",
+        "wikidata": null,
+        "wikipedia": "pt:Parada Santa Dalila",
+        "status_validacao": "validado_adicionado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1525439,
+          -22.6540211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_santa_guilhermina",
+      "properties": {
+        "id": "sta_santa_guilhermina",
+        "nome": "Santa Guilhermina",
+        "nome_normalizado": "santa_guilhermina",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.6656727,
+        "longitude": -43.0927526,
+        "osm_id": "node/5913831124",
+        "railway": "halt",
+        "public_transport": "station",
+        "railway_ref": "STG",
+        "wikidata": "Q10276037",
+        "wikipedia": "pt:Parada Santa Guilhermina",
+        "status_validacao": "validado_adicionado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.0927526,
+          -22.6656727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_surui",
+      "properties": {
+        "id": "sta_surui",
+        "nome": "Suruí",
+        "nome_normalizado": "surui",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.662995,
+        "longitude": -43.1289983,
+        "osm_id": "node/1058120139",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "SUR",
+        "wikidata": "Q10276153",
+        "wikipedia": "pt:Estação Suruí",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1289983,
+          -22.662995
         ]
       }
     },
@@ -56,7 +256,7 @@
         "ramais": [
           "guapimirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Guapimirim"
         ],
         "municipio": null,
@@ -69,7 +269,7 @@
         "railway_ref": "IRI",
         "wikidata": "Q10275879",
         "wikipedia": "pt:Estação Iriri",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -91,7 +291,7 @@
         "ramais": [
           "guapimirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Guapimirim"
         ],
         "municipio": null,
@@ -104,7 +304,7 @@
         "railway_ref": "MGE",
         "wikidata": "Q10275945",
         "wikipedia": "pt:Estação Magé",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -116,145 +316,281 @@
     },
     {
       "type": "Feature",
-      "id": "sta_parque_estrela",
+      "id": "sta_jardim_nova_marilia",
       "properties": {
-        "id": "sta_parque_estrela",
-        "nome": "Parque Estrela",
-        "nome_normalizado": "parque_estrela",
-        "tipo": "estacao",
-        "operador": "Supervia",
-        "ramais": [
-          "guapimirim"
-        ],
-        "ramais_nome": [
-          "Guapimirim"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.6502864,
-        "longitude": -43.2082176,
-        "osm_id": "way/90757423",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2082176,
-          -22.6502864
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_parque_estrela",
-      "properties": {
-        "id": "sta_parque_estrela",
-        "nome": "Parque Estrela",
-        "nome_normalizado": "parque_estrela",
+        "id": "sta_jardim_nova_marilia",
+        "nome": "Jardim Nova Marília",
+        "nome_normalizado": "jardim_nova_marilia",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
           "guapimirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Guapimirim"
         ],
-        "municipio": "Magé",
+        "municipio": null,
         "uf": "RJ",
-        "latitude": -22.6502692,
-        "longitude": -43.2082276,
-        "osm_id": "node/1053355284",
+        "latitude": -22.635828,
+        "longitude": -43.0303576,
+        "osm_id": "node/2211440347",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "PQE",
-        "wikidata": "Q10276040",
-        "wikipedia": "pt:Estação Parque Estrela",
-        "status_validacao": "pendente_revisao"
+        "railway_ref": "JNM",
+        "wikidata": "Q10275889",
+        "wikipedia": "pt:Estação Jardim Nova Marília",
+        "status_validacao": "validado_adicionado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.2082276,
-          -22.6502692
+          -43.0303576,
+          -22.635828
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "sta_saracuruna",
+      "id": "sta_jororo",
       "properties": {
-        "id": "sta_saracuruna",
-        "nome": "Saracuruna",
-        "nome_normalizado": "saracuruna",
+        "id": "sta_jororo",
+        "nome": "Jororó",
+        "nome_normalizado": "jororo",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
-          "saracuruna",
-          "vila_inhomirim",
           "guapimirim"
         ],
-        "ramais_nome": [
-          "Saracuruna",
-          "Vila Inhomirim",
+        "ramais_nomes": [
           "Guapimirim"
         ],
         "municipio": null,
         "uf": "RJ",
-        "latitude": -22.6777531,
-        "longitude": -43.247197,
-        "osm_id": "node/1053355283",
+        "latitude": -22.6053473,
+        "longitude": -43.0248374,
+        "osm_id": "node/2211440346",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "SAR",
-        "wikidata": "Q10276137",
-        "wikipedia": "pt:Estação Saracuruna",
-        "status_validacao": "pendente_revisao"
+        "railway_ref": "JRO",
+        "wikidata": "Q10275899",
+        "wikipedia": "pt:Estação Jororó",
+        "status_validacao": "validado_adicionado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.247197,
-          -22.6777531
+          -43.0248374,
+          -22.6053473
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "sta_surui",
+      "id": "sta_citrolandia",
       "properties": {
-        "id": "sta_surui",
-        "nome": "Suruí",
-        "nome_normalizado": "surui",
+        "id": "sta_citrolandia",
+        "nome": "Citrolândia",
+        "nome_normalizado": "citrolandia",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
           "guapimirim"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Guapimirim"
         ],
         "municipio": null,
         "uf": "RJ",
-        "latitude": -22.662995,
-        "longitude": -43.1289983,
-        "osm_id": "node/1058120139",
+        "latitude": -22.5933293,
+        "longitude": -43.0155288,
+        "osm_id": "node/2211438810",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "SUR",
-        "wikidata": "Q10276153",
-        "wikipedia": "pt:Estação Suruí",
-        "status_validacao": "pendente_revisao"
+        "railway_ref": "CTR",
+        "wikidata": "Q10275654",
+        "wikipedia": "pt:Estação Citrolândia",
+        "status_validacao": "validado_adicionado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.1289983,
-          -22.662995
+          -43.0155288,
+          -22.5933293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_parada_ideal",
+      "properties": {
+        "id": "sta_parada_ideal",
+        "nome": "Parada Ideal",
+        "nome_normalizado": "parada_ideal",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.5797933,
+        "longitude": -43.0054023,
+        "osm_id": "node/2211441993",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "IDL",
+        "wikidata": "Q10276033",
+        "wikipedia": "pt:Estação Parada Ideal",
+        "status_validacao": "validado_adicionado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.0054023,
+          -22.5797933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_jardim_guapimirim",
+      "properties": {
+        "id": "sta_jardim_guapimirim",
+        "nome": "Jardim Guapimirim",
+        "nome_normalizado": "jardim_guapimirim",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.5624614,
+        "longitude": -42.9950168,
+        "osm_id": "node/2211436751",
+        "railway": "halt",
+        "public_transport": "station",
+        "railway_ref": "JDG",
+        "wikidata": "Q10276029",
+        "wikipedia": "pt:Estação Jardim Guapimirim",
+        "status_validacao": "validado_adicionado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9950168,
+          -22.5624614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_parada_modelo",
+      "properties": {
+        "id": "sta_parada_modelo",
+        "nome": "Parada Modelo",
+        "nome_normalizado": "parada_modelo",
+        "tipo": "estacao",
+        "operador": "Central Logística",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.5459658,
+        "longitude": -42.985108,
+        "osm_id": "node/1128292080",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MDL",
+        "wikidata": "Q10276035",
+        "wikipedia": "pt:Estação Parada Modelo",
+        "status_validacao": "validado_adicionado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.985108,
+          -22.5459658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_parada_bananal",
+      "properties": {
+        "id": "sta_parada_bananal",
+        "nome": "Parada Bananal",
+        "nome_normalizado": "parada_bananal",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.5368967,
+        "longitude": -42.9822383,
+        "osm_id": "node/2211434416",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "BNL",
+        "wikidata": "Q10276028",
+        "wikipedia": "pt:Estação Parada Bananal",
+        "status_validacao": "validado_adicionado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9822383,
+          -22.5368967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_guapimirim",
+      "properties": {
+        "id": "sta_guapimirim",
+        "nome": "Guapimirim",
+        "nome_normalizado": "guapimirim",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "guapimirim"
+        ],
+        "ramais_nomes": [
+          "Guapimirim"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.5198995,
+        "longitude": -42.9774603,
+        "osm_id": "node/6750726934",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "GPM",
+        "wikidata": "Q10275837",
+        "wikipedia": "pt:Estação Guapimirim",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9774603,
+          -22.5198995
         ]
       }
     }

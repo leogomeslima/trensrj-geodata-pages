@@ -1,84 +1,70 @@
 {
   "type": "FeatureCollection",
-  "name": "estacoes_supervia_japeri",
+  "name": "estacoes_japeri",
   "metadata": {
-    "ramal_id": "japeri",
-    "ramal_nome": "Japeri",
-    "total_registros": 21,
+    "projeto": "SuperVia GeoData Pages",
+    "descricao": "Base estática georreferenciada das estações ferroviárias da SuperVia RJ, corrigida por curadoria e consulta complementar de faltantes.",
+    "versao": "1.1.0",
+    "operador": "SuperVia",
+    "estado": "Rio de Janeiro",
+    "pais": "Brasil",
     "srid": "EPSG:4326",
-    "fonte": "OpenStreetMap/Overpass + curadoria"
+    "origem": "OpenStreetMap/Overpass + curadoria manual por lista mestre",
+    "licenca_dados": "OpenStreetMap/ODbL",
+    "ultima_atualizacao": "2026-06-26",
+    "total_estacoes": 19,
+    "dataset": "estacoes_supervia",
+    "total_registros": 103,
+    "correcao": {
+      "extras_removidos": [
+        "Adeus",
+        "Alemão",
+        "Itararé",
+        "Palmeiras"
+      ],
+      "duplicidades_resolvidas": [
+        {
+          "nome": "Bonsucesso",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Manoel Belo",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Maracanã",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Paracambi",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Parque Estrela",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "São Cristóvão",
+          "quantidade_original": 2
+        }
+      ],
+      "estacoes_adicionadas": [
+        "Corte Oito",
+        "Santa Dalila",
+        "Santa Guilhermina",
+        "Jardim Nova Marília",
+        "Jororó",
+        "Citrolândia",
+        "Parada Ideal",
+        "Jardim Guapimirim",
+        "Parada Modelo",
+        "Parada Bananal"
+      ],
+      "faltantes_restantes": []
+    },
+    "ramal": "japeri"
   },
   "features": [
-    {
-      "type": "Feature",
-      "id": "sta_anchieta",
-      "properties": {
-        "id": "sta_anchieta",
-        "nome": "Anchieta",
-        "nome_normalizado": "anchieta",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.8244039,
-        "longitude": -43.4032236,
-        "osm_id": "node/823909110",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "ACT",
-        "wikidata": "Q10275564",
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.4032236,
-          -22.8244039
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_austin",
-      "properties": {
-        "id": "sta_austin",
-        "nome": "Austin",
-        "nome_normalizado": "austin",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Nova Iguaçu",
-        "uf": "RJ",
-        "latitude": -22.7202067,
-        "longitude": -43.5232928,
-        "osm_id": "node/992850521",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "AUS",
-        "wikidata": "Q10275584",
-        "wikipedia": "pt:Estação Austin",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.5232928,
-          -22.7202067
-        ]
-      }
-    },
     {
       "type": "Feature",
       "id": "sta_central_do_brasil",
@@ -95,7 +81,7 @@
           "belford_roxo",
           "saracuruna"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Deodoro",
           "Japeri",
           "Santa Cruz",
@@ -112,7 +98,7 @@
         "railway_ref": "CBL",
         "wikidata": "Q1274003",
         "wikipedia": "pt:Estação Central do Brasil",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -124,36 +110,165 @@
     },
     {
       "type": "Feature",
-      "id": "sta_comendador_soares",
+      "id": "sta_sao_cristovao",
       "properties": {
-        "id": "sta_comendador_soares",
-        "nome": "Comendador Soares",
-        "nome_normalizado": "comendador_soares",
+        "id": "sta_sao_cristovao",
+        "nome": "São Cristóvão",
+        "nome_normalizado": "sao_cristovao",
         "tipo": "estacao",
         "operador": "SuperVia",
         "ramais": [
-          "japeri"
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
         ],
-        "ramais_nome": [
-          "Japeri"
+        "ramais_nomes": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
         ],
-        "municipio": "Nova Iguaçu",
+        "municipio": "Rio de Janeiro",
         "uf": "RJ",
-        "latitude": -22.7444109,
-        "longitude": -43.4884348,
-        "osm_id": "node/992849871",
+        "latitude": -22.9095441,
+        "longitude": -43.2228235,
+        "osm_id": "node/712849018",
         "railway": "station",
         "public_transport": "station",
-        "railway_ref": "CSS",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "railway_ref": "SCO",
+        "wikidata": "Q9352803",
+        "wikipedia": "pt:Estação São Cristóvão (Rio de Janeiro)",
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -43.4884348,
-          -22.7444109
+          -43.2228235,
+          -22.9095441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_maracana",
+      "properties": {
+        "id": "sta_maracana",
+        "nome": "Maracanã",
+        "nome_normalizado": "maracana",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz",
+          "belford_roxo",
+          "saracuruna"
+        ],
+        "ramais_nomes": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz",
+          "Belford Roxo",
+          "Saracuruna"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.9092963,
+        "longitude": -43.2332875,
+        "osm_id": "node/712849021",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MNA",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2332875,
+          -22.9092963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_engenho_de_dentro",
+      "properties": {
+        "id": "sta_engenho_de_dentro",
+        "nome": "Engenho de Dentro",
+        "nome_normalizado": "engenho_de_dentro",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz"
+        ],
+        "ramais_nomes": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz"
+        ],
+        "municipio": null,
+        "uf": "RJ",
+        "latitude": -22.895595,
+        "longitude": -43.2936902,
+        "osm_id": "node/823908958",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "EDO",
+        "wikidata": "Q10276017",
+        "wikipedia": "pt:Estação Olímpica de Engenho de Dentro",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.2936902,
+          -22.895595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_madureira",
+      "properties": {
+        "id": "sta_madureira",
+        "nome": "Madureira",
+        "nome_normalizado": "madureira",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "deodoro",
+          "japeri",
+          "santa_cruz"
+        ],
+        "ramais_nomes": [
+          "Deodoro",
+          "Japeri",
+          "Santa Cruz"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8766775,
+        "longitude": -43.3376192,
+        "osm_id": "node/823908929",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MRA",
+        "wikidata": "Q10275943",
+        "wikipedia": "pt:Estação Madureira",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3376192,
+          -22.8766775
         ]
       }
     },
@@ -171,7 +286,7 @@
           "japeri",
           "santa_cruz"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Deodoro",
           "Japeri",
           "Santa Cruz"
@@ -186,13 +301,153 @@
         "railway_ref": "DDO",
         "wikidata": "Q10275687",
         "wikipedia": "pt:Estação Deodoro",
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -43.3835251,
           -22.8550694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_ricardo_de_albuquerque",
+      "properties": {
+        "id": "sta_ricardo_de_albuquerque",
+        "nome": "Ricardo de Albuquerque",
+        "nome_normalizado": "ricardo_de_albuquerque",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8403788,
+        "longitude": -43.3984286,
+        "osm_id": "node/823909078",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "RIC",
+        "wikidata": "Q10276095",
+        "wikipedia": "pt:Estação Ricardo de Albuquerque",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.3984286,
+          -22.8403788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_anchieta",
+      "properties": {
+        "id": "sta_anchieta",
+        "nome": "Anchieta",
+        "nome_normalizado": "anchieta",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.8244039,
+        "longitude": -43.4032236,
+        "osm_id": "node/823909110",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "ACT",
+        "wikidata": "Q10275564",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4032236,
+          -22.8244039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_olinda",
+      "properties": {
+        "id": "sta_olinda",
+        "nome": "Olinda",
+        "nome_normalizado": "olinda",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Nilópolis",
+        "uf": "RJ",
+        "latitude": -22.8174204,
+        "longitude": -43.4100058,
+        "osm_id": "node/992840767",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "OLI",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4100058,
+          -22.8174204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_nilopolis",
+      "properties": {
+        "id": "sta_nilopolis",
+        "nome": "Nilópolis",
+        "nome_normalizado": "nilopolis",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Nilópolis",
+        "uf": "RJ",
+        "latitude": -22.8085879,
+        "longitude": -43.4150127,
+        "osm_id": "node/992841159",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "NLS",
+        "wikidata": "Q10276006",
+        "wikipedia": "pt:Estação Nilópolis",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4150127,
+          -22.8085879
         ]
       }
     },
@@ -208,7 +463,7 @@
         "ramais": [
           "japeri"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Japeri"
         ],
         "municipio": "Nova Iguaçu",
@@ -221,13 +476,223 @@
         "railway_ref": "EPS",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -43.4226447,
           -22.796228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_mesquita",
+      "properties": {
+        "id": "sta_mesquita",
+        "nome": "Mesquita",
+        "nome_normalizado": "mesquita",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Mesquita",
+        "uf": "RJ",
+        "latitude": -22.7825527,
+        "longitude": -43.4286665,
+        "osm_id": "node/992846878",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "MES",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4286665,
+          -22.7825527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_presidente_juscelino",
+      "properties": {
+        "id": "sta_presidente_juscelino",
+        "nome": "Presidente Juscelino",
+        "nome_normalizado": "presidente_juscelino",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Mesquita",
+        "uf": "RJ",
+        "latitude": -22.7700212,
+        "longitude": -43.4344219,
+        "osm_id": "node/992848083",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "JUS",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4344219,
+          -22.7700212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_nova_iguacu",
+      "properties": {
+        "id": "sta_nova_iguacu",
+        "nome": "Nova Iguaçu",
+        "nome_normalizado": "nova_iguacu",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Nova Iguaçu",
+        "uf": "RJ",
+        "latitude": -22.7606593,
+        "longitude": -43.4500852,
+        "osm_id": "way/91617869",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "NIU",
+        "wikidata": "Q10276011",
+        "wikipedia": "pt:Estação Nova Iguaçu",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4500852,
+          -22.7606593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_comendador_soares",
+      "properties": {
+        "id": "sta_comendador_soares",
+        "nome": "Comendador Soares",
+        "nome_normalizado": "comendador_soares",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Nova Iguaçu",
+        "uf": "RJ",
+        "latitude": -22.7444109,
+        "longitude": -43.4884348,
+        "osm_id": "node/992849871",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "CSS",
+        "wikidata": null,
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.4884348,
+          -22.7444109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_austin",
+      "properties": {
+        "id": "sta_austin",
+        "nome": "Austin",
+        "nome_normalizado": "austin",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Nova Iguaçu",
+        "uf": "RJ",
+        "latitude": -22.7202067,
+        "longitude": -43.5232928,
+        "osm_id": "node/992850521",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "AUS",
+        "wikidata": "Q10275584",
+        "wikipedia": "pt:Estação Austin",
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.5232928,
+          -22.7202067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sta_queimados",
+      "properties": {
+        "id": "sta_queimados",
+        "nome": "Queimados",
+        "nome_normalizado": "queimados",
+        "tipo": "estacao",
+        "operador": "SuperVia",
+        "ramais": [
+          "japeri"
+        ],
+        "ramais_nomes": [
+          "Japeri"
+        ],
+        "municipio": "Queimados",
+        "uf": "RJ",
+        "latitude": -22.7161091,
+        "longitude": -43.555896,
+        "osm_id": "way/1216351470",
+        "railway": "station",
+        "public_transport": "station",
+        "railway_ref": "QMO",
+        "wikidata": "Q10276078",
+        "wikipedia": null,
+        "status_validacao": "validado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.555896,
+          -22.7161091
         ]
       }
     },
@@ -243,7 +708,7 @@
         "ramais": [
           "japeri"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Japeri"
         ],
         "municipio": "Japeri",
@@ -256,7 +721,7 @@
         "railway_ref": "EPA",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -279,7 +744,7 @@
           "japeri",
           "paracambi"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Japeri",
           "Paracambi"
         ],
@@ -293,508 +758,13 @@
         "railway_ref": "JRI",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -43.6529816,
           -22.644579
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_madureira",
-      "properties": {
-        "id": "sta_madureira",
-        "nome": "Madureira",
-        "nome_normalizado": "madureira",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.8766775,
-        "longitude": -43.3376192,
-        "osm_id": "node/823908929",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "MRA",
-        "wikidata": "Q10275943",
-        "wikipedia": "pt:Estação Madureira",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3376192,
-          -22.8766775
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_maracana",
-      "properties": {
-        "id": "sta_maracana",
-        "nome": "Maracanã",
-        "nome_normalizado": "maracana",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz",
-          "belford_roxo",
-          "saracuruna"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz",
-          "Belford Roxo",
-          "Saracuruna"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.9093268,
-        "longitude": -43.2333606,
-        "osm_id": "way/288792009",
-        "railway": null,
-        "public_transport": "station",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2333606,
-          -22.9093268
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_maracana",
-      "properties": {
-        "id": "sta_maracana",
-        "nome": "Maracanã",
-        "nome_normalizado": "maracana",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz",
-          "belford_roxo",
-          "saracuruna"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz",
-          "Belford Roxo",
-          "Saracuruna"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.9092963,
-        "longitude": -43.2332875,
-        "osm_id": "node/712849021",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "MNA",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2332875,
-          -22.9092963
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_mesquita",
-      "properties": {
-        "id": "sta_mesquita",
-        "nome": "Mesquita",
-        "nome_normalizado": "mesquita",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Mesquita",
-        "uf": "RJ",
-        "latitude": -22.7825527,
-        "longitude": -43.4286665,
-        "osm_id": "node/992846878",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "MES",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.4286665,
-          -22.7825527
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_nilopolis",
-      "properties": {
-        "id": "sta_nilopolis",
-        "nome": "Nilópolis",
-        "nome_normalizado": "nilopolis",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Nilópolis",
-        "uf": "RJ",
-        "latitude": -22.8085879,
-        "longitude": -43.4150127,
-        "osm_id": "node/992841159",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "NLS",
-        "wikidata": "Q10276006",
-        "wikipedia": "pt:Estação Nilópolis",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.4150127,
-          -22.8085879
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_nova_iguacu",
-      "properties": {
-        "id": "sta_nova_iguacu",
-        "nome": "Nova Iguaçu",
-        "nome_normalizado": "nova_iguacu",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Nova Iguaçu",
-        "uf": "RJ",
-        "latitude": -22.7606593,
-        "longitude": -43.4500852,
-        "osm_id": "way/91617869",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "NIU",
-        "wikidata": "Q10276011",
-        "wikipedia": "pt:Estação Nova Iguaçu",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.4500852,
-          -22.7606593
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_olimpica_de_engenho_de_dentro",
-      "properties": {
-        "id": "sta_olimpica_de_engenho_de_dentro",
-        "nome": "Olímpica de Engenho de Dentro",
-        "nome_normalizado": "olimpica_de_engenho_de_dentro",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.895595,
-        "longitude": -43.2936902,
-        "osm_id": "node/823908958",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "EDO",
-        "wikidata": "Q10276017",
-        "wikipedia": "pt:Estação Olímpica de Engenho de Dentro",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2936902,
-          -22.895595
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_olinda",
-      "properties": {
-        "id": "sta_olinda",
-        "nome": "Olinda",
-        "nome_normalizado": "olinda",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Nilópolis",
-        "uf": "RJ",
-        "latitude": -22.8174204,
-        "longitude": -43.4100058,
-        "osm_id": "node/992840767",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "OLI",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.4100058,
-          -22.8174204
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_presidente_juscelino",
-      "properties": {
-        "id": "sta_presidente_juscelino",
-        "nome": "Presidente Juscelino",
-        "nome_normalizado": "presidente_juscelino",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Mesquita",
-        "uf": "RJ",
-        "latitude": -22.7700212,
-        "longitude": -43.4344219,
-        "osm_id": "node/992848083",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "JUS",
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.4344219,
-          -22.7700212
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_queimados",
-      "properties": {
-        "id": "sta_queimados",
-        "nome": "Queimados",
-        "nome_normalizado": "queimados",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Queimados",
-        "uf": "RJ",
-        "latitude": -22.7161091,
-        "longitude": -43.555896,
-        "osm_id": "way/1216351470",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "QMO",
-        "wikidata": "Q10276078",
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.555896,
-          -22.7161091
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_ricardo_de_albuquerque",
-      "properties": {
-        "id": "sta_ricardo_de_albuquerque",
-        "nome": "Ricardo de Albuquerque",
-        "nome_normalizado": "ricardo_de_albuquerque",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "japeri"
-        ],
-        "ramais_nome": [
-          "Japeri"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.8403788,
-        "longitude": -43.3984286,
-        "osm_id": "node/823909078",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "RIC",
-        "wikidata": "Q10276095",
-        "wikipedia": "pt:Estação Ricardo de Albuquerque",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.3984286,
-          -22.8403788
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_sao_cristovao",
-      "properties": {
-        "id": "sta_sao_cristovao",
-        "nome": "São Cristóvão",
-        "nome_normalizado": "sao_cristovao",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz",
-          "belford_roxo",
-          "saracuruna"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz",
-          "Belford Roxo",
-          "Saracuruna"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.9095585,
-        "longitude": -43.2227819,
-        "osm_id": "way/442465289",
-        "railway": null,
-        "public_transport": "station",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2227819,
-          -22.9095585
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_sao_cristovao",
-      "properties": {
-        "id": "sta_sao_cristovao",
-        "nome": "São Cristóvão",
-        "nome_normalizado": "sao_cristovao",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "deodoro",
-          "japeri",
-          "santa_cruz",
-          "belford_roxo",
-          "saracuruna"
-        ],
-        "ramais_nome": [
-          "Deodoro",
-          "Japeri",
-          "Santa Cruz",
-          "Belford Roxo",
-          "Saracuruna"
-        ],
-        "municipio": "Rio de Janeiro",
-        "uf": "RJ",
-        "latitude": -22.9095441,
-        "longitude": -43.2228235,
-        "osm_id": "node/712849018",
-        "railway": "station",
-        "public_transport": "station",
-        "railway_ref": "SCO",
-        "wikidata": "Q9352803",
-        "wikipedia": "pt:Estação São Cristóvão (Rio de Janeiro)",
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.2228235,
-          -22.9095441
         ]
       }
     }

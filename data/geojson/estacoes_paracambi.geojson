@@ -1,12 +1,68 @@
 {
   "type": "FeatureCollection",
-  "name": "estacoes_supervia_paracambi",
+  "name": "estacoes_paracambi",
   "metadata": {
-    "ramal_id": "paracambi",
-    "ramal_nome": "Paracambi",
-    "total_registros": 4,
+    "projeto": "SuperVia GeoData Pages",
+    "descricao": "Base estática georreferenciada das estações ferroviárias da SuperVia RJ, corrigida por curadoria e consulta complementar de faltantes.",
+    "versao": "1.1.0",
+    "operador": "SuperVia",
+    "estado": "Rio de Janeiro",
+    "pais": "Brasil",
     "srid": "EPSG:4326",
-    "fonte": "OpenStreetMap/Overpass + curadoria"
+    "origem": "OpenStreetMap/Overpass + curadoria manual por lista mestre",
+    "licenca_dados": "OpenStreetMap/ODbL",
+    "ultima_atualizacao": "2026-06-26",
+    "total_estacoes": 3,
+    "dataset": "estacoes_supervia",
+    "total_registros": 103,
+    "correcao": {
+      "extras_removidos": [
+        "Adeus",
+        "Alemão",
+        "Itararé",
+        "Palmeiras"
+      ],
+      "duplicidades_resolvidas": [
+        {
+          "nome": "Bonsucesso",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Manoel Belo",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Maracanã",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Paracambi",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "Parque Estrela",
+          "quantidade_original": 2
+        },
+        {
+          "nome": "São Cristóvão",
+          "quantidade_original": 2
+        }
+      ],
+      "estacoes_adicionadas": [
+        "Corte Oito",
+        "Santa Dalila",
+        "Santa Guilhermina",
+        "Jardim Nova Marília",
+        "Jororó",
+        "Citrolândia",
+        "Parada Ideal",
+        "Jardim Guapimirim",
+        "Parada Modelo",
+        "Parada Bananal"
+      ],
+      "faltantes_restantes": []
+    },
+    "ramal": "paracambi"
   },
   "features": [
     {
@@ -22,7 +78,7 @@
           "japeri",
           "paracambi"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Japeri",
           "Paracambi"
         ],
@@ -36,7 +92,7 @@
         "railway_ref": "JRI",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -58,7 +114,7 @@
         "ramais": [
           "paracambi"
         ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Paracambi"
         ],
         "municipio": "Paracambi",
@@ -71,7 +127,7 @@
         "railway_ref": "LAJ",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
@@ -93,42 +149,7 @@
         "ramais": [
           "paracambi"
         ],
-        "ramais_nome": [
-          "Paracambi"
-        ],
-        "municipio": null,
-        "uf": "RJ",
-        "latitude": -22.6115362,
-        "longitude": -43.7108646,
-        "osm_id": "way/626544054",
-        "railway": null,
-        "public_transport": "station",
-        "railway_ref": null,
-        "wikidata": null,
-        "wikipedia": null,
-        "status_validacao": "pendente_revisao"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -43.7108646,
-          -22.6115362
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "sta_paracambi",
-      "properties": {
-        "id": "sta_paracambi",
-        "nome": "Paracambi",
-        "nome_normalizado": "paracambi",
-        "tipo": "estacao",
-        "operador": "SuperVia",
-        "ramais": [
-          "paracambi"
-        ],
-        "ramais_nome": [
+        "ramais_nomes": [
           "Paracambi"
         ],
         "municipio": "Paracambi",
@@ -141,7 +162,7 @@
         "railway_ref": "PBI",
         "wikidata": null,
         "wikipedia": null,
-        "status_validacao": "pendente_revisao"
+        "status_validacao": "validado"
       },
       "geometry": {
         "type": "Point",
