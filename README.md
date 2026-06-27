@@ -1,6 +1,6 @@
-# SuperVia GeoData Pages
+# TrensRJ GeoData Pages
 
-Site estático para publicar dados georreferenciados da SuperVia no GitHub Pages.
+Site estático para publicar dados georreferenciados da TrensRJ no GitHub Pages.
 
 ## O que este projeto entrega
 
