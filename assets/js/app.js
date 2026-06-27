@@ -1,13 +1,15 @@
 const paths = {
   estacoesJson: 'data/json/estacoes.json',
   ramaisJson: 'data/json/ramais.json',
-  estacoesGeojson: 'data/geojson/estacoes.geojson'
+  estacoesGeojson: 'data/geojson/estacoes.geojson',
+  ativosJson: 'data/json/ativos.json'
 };
 
 let estacoes = [];
 let ramais = [];
 let geojsonOriginal = null;
 let stationLayer = null;
+let ativosMetadata = null;
 
 const map = L.map('map').setView([-22.86, -43.35], 10);
 
@@ -31,11 +33,14 @@ async function loadJson(path) {
 
 function renderCards(metadata) {
   const cards = document.getElementById('cards');
+  const totalAtivos = ativosMetadata?.total_registros ?? '-';
+  const totalAtivosGeo = ativosMetadata?.total_georreferenciados ?? '-';
+
   cards.innerHTML = `
     <div class="card"><strong>${metadata.total_estacoes || estacoes.length}</strong><span>estações/pontos</span></div>
     <div class="card"><strong>${ramais.length}</strong><span>ramais/extensões</span></div>
-    <div class="card"><strong>${metadata.srid || 'EPSG:4326'}</strong><span>sistema de coordenadas</span></div>
-    <div class="card"><strong>${metadata.versao || '1.0.0'}</strong><span>versão da base</span></div>
+    <div class="card"><strong>${totalAtivos}</strong><span>ativos publicados</span></div>
+    <div class="card"><strong>${totalAtivosGeo}</strong><span>ativos com coordenadas</span></div>
   `;
 }
 
@@ -135,15 +140,17 @@ function applyFilters() {
 }
 
 async function init() {
-  const [stationsResponse, branchesResponse, geojson] = await Promise.all([
+  const [stationsResponse, branchesResponse, geojson, ativosResponse] = await Promise.all([
     loadJson(paths.estacoesJson),
     loadJson(paths.ramaisJson),
-    loadJson(paths.estacoesGeojson)
+    loadJson(paths.estacoesGeojson),
+    loadJson(paths.ativosJson)
   ]);
 
   estacoes = stationsResponse.data || [];
   ramais = branchesResponse.data || [];
   geojsonOriginal = geojson;
+  ativosMetadata = ativosResponse.metadata || null;
 
   renderCards(stationsResponse.metadata || {});
   renderBranchFilter();

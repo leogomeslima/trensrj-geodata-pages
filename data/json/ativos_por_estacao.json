@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "dataset": "ativos_por_estacao",
+    "total_estacoes_ou_locais": 97,
+    "versao": "1.0.0"
+  },
+  "data": [
+    {
+      "estacao_identificada": "Deodoro",
+      "total_ativos": 3355
+    },
+    {
+      "estacao_identificada": "Sede CCO",
+      "total_ativos": 3342
+    },
+    {
+      "estacao_identificada": "CME (Centro de Manutenção)",
+      "total_ativos": 1625
+    },
+    {
+      "estacao_identificada": "Oficina São Diogo",
+      "total_ativos": 875
+    },
+    {
+      "estacao_identificada": "Central do Brasil",
+      "total_ativos": 703
+    },
+    {
+      "estacao_identificada": "GEMEC",
+      "total_ativos": 674
+    },
+    {
+      "estacao_identificada": "Duque de Caxias",
+      "total_ativos": 664
+    },
+    {
+      "estacao_identificada": "CTO",
+      "total_ativos": 408
+    },
+    {
+      "estacao_identificada": "Madureira",
+      "total_ativos": 252
+    },
+    {
+      "estacao_identificada": "Santa Cruz",
+      "total_ativos": 198
+    },
+    {
+      "estacao_identificada": "São Cristóvão",
+      "total_ativos": 192
+    },
+    {
+      "estacao_identificada": "Japeri",
+      "total_ativos": 187
+    },
+    {
+      "estacao_identificada": "Nova Iguaçu",
+      "total_ativos": 186
+    },
+    {
+      "estacao_identificada": "Estação 2",
+      "total_ativos": 171
+    },
+    {
+      "estacao_identificada": "Belford Roxo",
+      "total_ativos": 161
+    },
+    {
+      "estacao_identificada": "Nilópolis",
+      "total_ativos": 161
+    },
+    {
+      "estacao_identificada": "Bangu",
+      "total_ativos": 132
+    },
+    {
+      "estacao_identificada": "Engenho de Dentro",
+      "total_ativos": 132
+    },
+    {
+      "estacao_identificada": "Maracanã",
+      "total_ativos": 113
+    },
+    {
+      "estacao_identificada": "Estação 1",
+      "total_ativos": 109
+    },
+    {
+      "estacao_identificada": "Campo Grande",
+      "total_ativos": 102
+    },
+    {
+      "estacao_identificada": "Cascadura",
+      "total_ativos": 91
+    },
+    {
+      "estacao_identificada": "Penha",
+      "total_ativos": 87
+    },
+    {
+      "estacao_identificada": "Pavuna",
+      "total_ativos": 84
+    },
+    {
+      "estacao_identificada": "Triagem",
+      "total_ativos": 78
+    },
+    {
+      "estacao_identificada": "Magé",
+      "total_ativos": 77
+    },
+    {
+      "estacao_identificada": "Praça da Bandeira",
+      "total_ativos": 74
+    },
+    {
+      "estacao_identificada": "Sem estação",
+      "total_ativos": 71
+    },
+    {
+      "estacao_identificada": "Vila Militar",
+      "total_ativos": 68
+    },
+    {
+      "estacao_identificada": "Méier",
+      "total_ativos": 65
+    },
+    {
+      "estacao_identificada": "Queimados",
+      "total_ativos": 63
+    },
+    {
+      "estacao_identificada": "Comendador Soares",
+      "total_ativos": 62
+    },
+    {
+      "estacao_identificada": "Ricardo de Albuquerque",
+      "total_ativos": 61
+    },
+    {
+      "estacao_identificada": "Austin",
+      "total_ativos": 60
+    },
+    {
+      "estacao_identificada": "Magalhães Bastos",
+      "total_ativos": 59
+    },
+    {
+      "estacao_identificada": "Mocidade/Padre Miguel",
+      "total_ativos": 58
+    },
+    {
+      "estacao_identificada": "São Francisco Xavier",
+      "total_ativos": 58
+    },
+    {
+      "estacao_identificada": "Edson Passos",
+      "total_ativos": 55
+    },
+    {
+      "estacao_identificada": "Quintino",
+      "total_ativos": 55
+    },
+    {
+      "estacao_identificada": "Realengo",
+      "total_ativos": 54
+    },
+    {
+      "estacao_identificada": "Piedade",
+      "total_ativos": 52
+    },
+    {
+      "estacao_identificada": "Anchieta",
+      "total_ativos": 48
+    },
+    {
+      "estacao_identificada": "Guilherme da Silveira",
+      "total_ativos": 48
+    },
+    {
+      "estacao_identificada": "Oswaldo Cruz",
+      "total_ativos": 47
+    },
+    {
+      "estacao_identificada": "Jardim Primavera",
+      "total_ativos": 45
+    },
+    {
+      "estacao_identificada": "Tancredo Neves",
+      "total_ativos": 44
+    },
+    {
+      "estacao_identificada": "Mesquita",
+      "total_ativos": 43
+    },
+    {
+      "estacao_identificada": "Parada de Lucas",
+      "total_ativos": 43
+    },
+    {
+      "estacao_identificada": "Olinda",
+      "total_ativos": 42
+    },
+    {
+      "estacao_identificada": "Marechal Hermes",
+      "total_ativos": 41
+    },
+    {
+      "estacao_identificada": "Paciência",
+      "total_ativos": 40
+    },
+    {
+      "estacao_identificada": "Presidente Juscelino",
+      "total_ativos": 40
+    },
+    {
+      "estacao_identificada": "Santíssimo",
+      "total_ativos": 40
+    },
+    {
+      "estacao_identificada": "Cosmos",
+      "total_ativos": 38
+    },
+    {
+      "estacao_identificada": "Jacarezinho",
+      "total_ativos": 38
+    },
+    {
+      "estacao_identificada": "Olaria",
+      "total_ativos": 38
+    },
+    {
+      "estacao_identificada": "Sampaio",
+      "total_ativos": 38
+    },
+    {
+      "estacao_identificada": "Benjamim do Monte",
+      "total_ativos": 37
+    },
+    {
+      "estacao_identificada": "Cordovil",
+      "total_ativos": 37
+    },
+    {
+      "estacao_identificada": "Inhoaíba",
+      "total_ativos": 37
+    },
+    {
+      "estacao_identificada": "Senador Camará",
+      "total_ativos": 37
+    },
+    {
+      "estacao_identificada": "Paracambi",
+      "total_ativos": 36
+    },
+    {
+      "estacao_identificada": "Tomás Coelho",
+      "total_ativos": 35
+    },
+    {
+      "estacao_identificada": "Riachuelo",
+      "total_ativos": 34
+    },
+    {
+      "estacao_identificada": "Ramos",
+      "total_ativos": 32
+    },
+    {
+      "estacao_identificada": "Bonsucesso",
+      "total_ativos": 31
+    },
+    {
+      "estacao_identificada": "Engenho Novo",
+      "total_ativos": 31
+    },
+    {
+      "estacao_identificada": "Saracuruna",
+      "total_ativos": 31
+    },
+    {
+      "estacao_identificada": "Cavalcanti",
+      "total_ativos": 30
+    },
+    {
+      "estacao_identificada": "Engenheiro Pedreira",
+      "total_ativos": 30
+    },
+    {
+      "estacao_identificada": "Augusto Vasconcelos",
+      "total_ativos": 28
+    },
+    {
+      "estacao_identificada": "Prefeito Bento Ribeiro",
+      "total_ativos": 28
+    },
+    {
+      "estacao_identificada": "Rocha Miranda",
+      "total_ativos": 28
+    },
+    {
+      "estacao_identificada": "Gramacho",
+      "total_ativos": 27
+    },
+    {
+      "estacao_identificada": "Manguinhos",
+      "total_ativos": 27
+    },
+    {
+      "estacao_identificada": "Pilares",
+      "total_ativos": 27
+    },
+    {
+      "estacao_identificada": "Brás de Pina",
+      "total_ativos": 25
+    },
+    {
+      "estacao_identificada": "Vila Rosali",
+      "total_ativos": 24
+    },
+    {
+      "estacao_identificada": "Del Castilho",
+      "total_ativos": 22
+    },
+    {
+      "estacao_identificada": "Honório Gurgel",
+      "total_ativos": 22
+    },
+    {
+      "estacao_identificada": "Agostinho Porto",
+      "total_ativos": 21
+    },
+    {
+      "estacao_identificada": "Costa Barros",
+      "total_ativos": 21
+    },
+    {
+      "estacao_identificada": "Estação 3",
+      "total_ativos": 21
+    },
+    {
+      "estacao_identificada": "Vigário Geral",
+      "total_ativos": 18
+    },
+    {
+      "estacao_identificada": "Barros Filho",
+      "total_ativos": 17
+    },
+    {
+      "estacao_identificada": "Guapimirim",
+      "total_ativos": 16
+    },
+    {
+      "estacao_identificada": "Almoxarifado XM5",
+      "total_ativos": 12
+    },
+    {
+      "estacao_identificada": "Silva Freire",
+      "total_ativos": 12
+    },
+    {
+      "estacao_identificada": "Fragoso",
+      "total_ativos": 10
+    },
+    {
+      "estacao_identificada": "Mangueira/Jamelão",
+      "total_ativos": 8
+    },
+    {
+      "estacao_identificada": "Campos Elíseos",
+      "total_ativos": 6
+    },
+    {
+      "estacao_identificada": "Subestação D. Pedro II",
+      "total_ativos": 3
+    },
+    {
+      "estacao_identificada": "Lages",
+      "total_ativos": 2
+    },
+    {
+      "estacao_identificada": "Citrolândia",
+      "total_ativos": 1
+    },
+    {
+      "estacao_identificada": "Parada Ideal",
+      "total_ativos": 1
+    },
+    {
+      "estacao_identificada": "Parada Modelo",
+      "total_ativos": 1
+    },
+    {
+      "estacao_identificada": "Vila Inhomirim",
+      "total_ativos": 1
+    }
+  ]
+}
